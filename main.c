@@ -1,5 +1,5 @@
 #include <FreeRTOS.h>
-#include "task.h"
+#include "task.h" 
 #include "board.h"
 #include "bflb_mtd.h"
 #include "easyflash.h"
@@ -7,6 +7,11 @@
 #include "rfparam_adapter.h"
 #include "led_driver.h"
 #include "ble_driver.h"
+#include "bflb_gpio.h"
+#include "bflb_pwm_v2.h"
+#include "bflb_clock.h"
+#include "bflb_mtimer.h"
+#include "pwm_driver.h"
 
 static struct bflb_device_s *uart0;
 
@@ -26,16 +31,20 @@ int main(void)
     }
 
     // Initialize LED driver
-    led_driver_init(); //1 30 0
+    // led_driver_init(); //1 30 0
     
-    // Initialize BLE driver
+    // Initialize BLE driver 
     ble_driver_init();
 
     // Create LED task
-    xTaskCreate(led_task, "led_task", 256, NULL, configMAX_PRIORITIES - 3, NULL);
+    // xTaskCreate(led_task, "led_task", 256, NULL, configMAX_PRIORITIES - 3, NULL);
 
     // Create BLE task
     xTaskCreate(ble_task, "ble_task", 1024, NULL, configMAX_PRIORITIES - 2, NULL);
+    
+    pwm_driver_init();
+    // Create PWM task  
+    xTaskCreate(pwm_task, "pwm_task", 256, NULL, configMAX_PRIORITIES - 1, NULL);
     
     vTaskStartScheduler();
 

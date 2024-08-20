@@ -9,6 +9,7 @@ sdk_add_include_directories(drivers)
 
 target_sources(app PRIVATE drivers/led_driver.c)
 target_sources(app PRIVATE drivers/ble_driver.c)
+target_sources(app PRIVATE drivers/pwm_driver.c)
 
 sdk_set_main_file(main.c)
 

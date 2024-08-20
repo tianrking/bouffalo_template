@@ -20,6 +20,9 @@ git submodule update --init --recursive
 popd
 export BL_PATH = ~/BL_PATH
 
+make CHIP=bl616 BOARD=bl616dk
+make flash CHIP=bl616 COMX=/dev/ttyUSB0
+
 ## Compile
 
 - BL602/BL604
@@ -57,4 +60,12 @@ make CHIP=bl808 BOARD=bl808dk CPU_ID=d0
 
 ```
 make flash CHIP=chip_name COMX=xxx # xxx is your com name
+```
+
+## USB Serial
+- Windows: It's recommended to use tools that don't automatically control RTS, such as XCOM or VOFA+
+- Linux: Cutecom is recommended, which can be installed with:
+
+```bash
+sudo apt install cutecom
 ```

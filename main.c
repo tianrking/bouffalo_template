@@ -151,27 +151,35 @@ int main(void)
     //Create BLE task
     xTaskCreate(ble_task, "ble_task", 1024, NULL, configMAX_PRIORITIES - 2, NULL);
     
-    //Create PWM 1 30 0 1khz
-    if (!pwm_driver_init()) {
-        LOG_E("PWM driver initialization failed\r\n");
+    // //Create PWM 1 30 0 1khz
+    // if (!pwm_driver_init()) {
+    //     LOG_E("PWM driver initialization failed\r\n");
+    //     // while (1) {
+    //     //     // 错误处理
+    //     // }
+    // }
+
+    // if (xTaskCreate(pwm_task, "pwm_task", 512, NULL, configMAX_PRIORITIES - 1, NULL) != pdPASS) {
+    //     LOG_E("Failed to create PWM task\r\n");
+    //     // while (1) {
+    //     //     // 错误处理
+    //     // }
+    // }
+
+    // // STEP MOTOR PULSE
+    if (!stepper_motor_init()) {
+        LOG_E("Stepper motor driver initialization failed\r\n");
         // while (1) {
         //     // 错误处理
         // }
     }
 
-    if (xTaskCreate(pwm_task, "pwm_task", 512, NULL, configMAX_PRIORITIES - 1, NULL) != pdPASS) {
-        LOG_E("Failed to create PWM task\r\n");
+    if (xTaskCreate(stepper_motor_task, "stepper_task", 512, NULL, configMAX_PRIORITIES - 1, NULL) != pdPASS) {
+        LOG_E("Failed to create stepper motor task\r\n");
         // while (1) {
         //     // 错误处理
         // }
     }
-
-    // STEP MOTOR PULSE
-    // Initialize stepper motor driver
-    // stepper_motor_init(NULL);
-    // // Create stepper motor task
-    // xTaskCreate(stepper_motor_task, "stepper_motor_task", 512, NULL, configMAX_PRIORITIES - 1, NULL);
-
 
     vTaskStartScheduler();
 

@@ -12,7 +12,7 @@
 #include "uuid.h"
 #include "led_driver.h"
 #include "pwm_driver.h"
-
+#include "stepper_motor.h"
 // Custom Service UUID
 #define BT_UUID_CUSTOM_SERVICE BT_UUID_DECLARE_16(0xFFF0)
 #define BT_UUID_CUSTOM_CHAR_RX BT_UUID_DECLARE_16(0xFFF1)
@@ -45,7 +45,7 @@ static struct bt_gatt_service custom_svc = {
     .attrs = custom_attrs,
     .attr_count = ARRAY_SIZE(custom_attrs),
 };
-                          
+
 ssize_t write_rx_value(struct bt_conn *conn, const struct bt_gatt_attr *attr,
                              const void *buf, uint16_t len, uint16_t offset, uint8_t flags) {
     if (offset + len > sizeof(rx_value)) {
@@ -87,9 +87,14 @@ ssize_t write_rx_value(struct bt_conn *conn, const struct bt_gatt_attr *attr,
         }
 
         if (i == 3) {
-            pwm_set_duty_cycle(PWM_CH0, duty_cycle[0]);
-            pwm_set_duty_cycle(PWM_CH1, duty_cycle[1]);
-            pwm_set_duty_cycle(PWM_CH2, duty_cycle[2]);
+            // pwm_set_duty_cycle(PWM_CH0, duty_cycle[0]);
+            // pwm_set_duty_cycle(PWM_CH1, duty_cycle[1]);
+            // pwm_set_duty_cycle(PWM_CH2, duty_cycle[2]);
+
+
+            // stepper_motor_set_duty_cycle(PWM_CH0, duty_cycle[0]);
+            stepper_motor_set_duty_cycle(PWM_CH1, duty_cycle[1]);
+            stepper_motor_set_duty_cycle(PWM_CH2, duty_cycle[2]);
 
             // 向手机端发送 notify 消息
             uint8_t response[] = "Data received";

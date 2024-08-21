@@ -11,76 +11,42 @@
 #include "gatt.h"
 #include "uuid.h"
 #include "led_driver.h"
-#include "pwm_driver.h"  // 添加 PWM 驱动头文件
-
-
+#include "pwm_driver.h"
 
 // Custom Service UUID
 #define BT_UUID_CUSTOM_SERVICE BT_UUID_DECLARE_16(0xFFF0)
 #define BT_UUID_CUSTOM_CHAR_RX BT_UUID_DECLARE_16(0xFFF1)
+#define BT_UUID_CUSTOM_CHAR_TX BT_UUID_DECLARE_16(0xFFF2)
 
 static uint8_t rx_value[244] = {0};
+static uint8_t tx_value[128] = {0};
+static size_t tx_length = 0;
 
 static void ble_start_adv(void);
+ssize_t tx_char_read(struct bt_conn *conn, const struct bt_gatt_attr *attr,
+                           void *buf, uint16_t len, uint16_t offset);
 
-// static ssize_t write_rx_value(struct bt_conn *conn, const struct bt_gatt_attr *attr,
-//                              const void *buf, uint16_t len, uint16_t offset, uint8_t flags) {
-//     if (offset + len > sizeof(rx_value)) {
-//         return BT_GATT_ERR(BT_ATT_ERR_INVALID_OFFSET);
-//     }
+ssize_t write_rx_value(struct bt_conn *conn, const struct bt_gatt_attr *attr,
+                             const void *buf, uint16_t len, uint16_t offset, uint8_t flags);
 
-//     memcpy(rx_value + offset, buf, len);
-//     printf("Received data from phone:\n");
-//     printf("Hex: ");
-//     for (int i = 0; i < len; i++) {
-//         printf("%02X ", ((uint8_t *)buf)[i]);
-//     }
-//     printf("\nASCII: ");
-//     for (int i = 0; i < len; i++) {
-//         char c = ((char *)buf)[i];
-//         if (c >= 32 && c <= 126) {  // printable ASCII range
-//             printf("%c", c);
-//         } else {
-//             printf(".");
-//         }
-//     }
-//     printf("\n");
+static struct bt_gatt_attr custom_attrs[] = {
+    BT_GATT_PRIMARY_SERVICE(BT_UUID_CUSTOM_SERVICE),
+    BT_GATT_CHARACTERISTIC(BT_UUID_CUSTOM_CHAR_RX,
+                           BT_GATT_CHRC_WRITE | BT_GATT_CHRC_WRITE_WITHOUT_RESP,
+                           BT_GATT_PERM_WRITE,
+                           NULL, write_rx_value, NULL),
+    BT_GATT_CHARACTERISTIC(BT_UUID_CUSTOM_CHAR_TX,
+                           BT_GATT_CHRC_READ,
+                           BT_GATT_PERM_READ,
+                           tx_char_read, NULL, tx_value),
+};
 
-//     // 解析报文并设置 PWM 占空比
-//     char *data = (char *)buf;
-//     if (strncmp(data, "PWM=", 4) == 0) {
-//         char *p = data + 4;
-//         uint16_t duty_cycle[3] = {0};
-//         int i = 0;
-//         char *token;
-//         char *saveptr;
-
-//         for (token = strtok_r(p, ",", &saveptr); token != NULL && i < 3; token = strtok_r(NULL, ",", &saveptr)) {
-//             duty_cycle[i] = (uint16_t)atoi(token);
-//             if (duty_cycle[i] > 99) {
-//                 duty_cycle[i] = 99;
-//             }
-//             i++;
-//         }
-
-//         if (i == 3) {
-//             pwm_set_duty_cycle(PWM_CH0, duty_cycle[0]);
-//             pwm_set_duty_cycle(PWM_CH1, duty_cycle[1]);
-//             pwm_set_duty_cycle(PWM_CH2, duty_cycle[2]);
-//             memset(rx_value, 0, sizeof(rx_value));
-//         } else {
-//             printf("Invalid PWM command format\n");
-//             memset(rx_value, 0, sizeof(rx_value));
-//         }
-//     } else {
-//         printf("Invalid PWM command\n");
-//         memset(rx_value, 0, sizeof(rx_value));
-//     }
-
-//     return len;
-// }
-
-static ssize_t write_rx_value(struct bt_conn *conn, const struct bt_gatt_attr *attr,
+static struct bt_gatt_service custom_svc = {
+    .attrs = custom_attrs,
+    .attr_count = ARRAY_SIZE(custom_attrs),
+};
+                          
+ssize_t write_rx_value(struct bt_conn *conn, const struct bt_gatt_attr *attr,
                              const void *buf, uint16_t len, uint16_t offset, uint8_t flags) {
     if (offset + len > sizeof(rx_value)) {
         return BT_GATT_ERR(BT_ATT_ERR_INVALID_OFFSET);
@@ -124,32 +90,39 @@ static ssize_t write_rx_value(struct bt_conn *conn, const struct bt_gatt_attr *a
             pwm_set_duty_cycle(PWM_CH0, duty_cycle[0]);
             pwm_set_duty_cycle(PWM_CH1, duty_cycle[1]);
             pwm_set_duty_cycle(PWM_CH2, duty_cycle[2]);
+
+            // 向手机端发送 notify 消息
+            uint8_t response[] = "Data received";
+            bt_gatt_notify(conn, &custom_attrs[1], response, sizeof(response) - 1);
         } else {
             printf("Invalid PWM command format\n");
         }
         // 清空缓冲区
         memset(rx_value, 0, sizeof(rx_value));
+
+        // 向手机端发送确认消息
+        uint8_t response[] = "Data received";
+        send_data_to_phone(response, sizeof(response) - 1);
+
+        return len;
     } else {
         printf("Invalid PWM command\n");
         // 清空缓冲区
         memset(rx_value, 0, sizeof(rx_value));
-    }
 
-    return len;
+        // 向手机端发送错误消息
+        uint8_t response[] = "Invalid command";
+        send_data_to_phone(response, sizeof(response) - 1);
+
+        return len;
+    }
 }
 
-static struct bt_gatt_attr custom_attrs[] = {
-    BT_GATT_PRIMARY_SERVICE(BT_UUID_CUSTOM_SERVICE),
-    BT_GATT_CHARACTERISTIC(BT_UUID_CUSTOM_CHAR_RX,
-                           BT_GATT_CHRC_WRITE | BT_GATT_CHRC_WRITE_WITHOUT_RESP,
-                           BT_GATT_PERM_WRITE,
-                           NULL, write_rx_value, NULL),
-};
-
-static struct bt_gatt_service custom_svc = {
-    .attrs = custom_attrs,
-    .attr_count = ARRAY_SIZE(custom_attrs),
-};
+ssize_t tx_char_read(struct bt_conn *conn, const struct bt_gatt_attr *attr,
+                           void *buf, uint16_t len, uint16_t offset)
+{
+    return bt_gatt_attr_read(conn, attr, buf, len, offset, tx_value, tx_length);
+}
 
 static void ble_connected(struct bt_conn *conn, u8_t err)
 {
@@ -160,6 +133,10 @@ static void ble_connected(struct bt_conn *conn, u8_t err)
     printf("Connected\n");
     led_set_state(LED_ON);
     led_set_color(LED_COLOR_GREEN);
+
+    // 在连接时发送数据给手机端
+    uint8_t data[] = "Device connected";
+    send_data_to_phone(data, sizeof(data) - 1);
 }
 
 static void ble_disconnected(struct bt_conn *conn, u8_t reason)
@@ -172,6 +149,10 @@ static void ble_disconnected(struct bt_conn *conn, u8_t reason)
     led_set_state(LED_BLINK_SLOW);
     led_set_color(LED_COLOR_BLUE);
     ble_start_adv();
+
+    // 在断开连接时发送数据给手机端
+    uint8_t data[] = "Device disconnected";
+    send_data_to_phone(data, sizeof(data) - 1);
 }
 
 static struct bt_conn_cb ble_conn_callbacks = {
@@ -248,4 +229,17 @@ void ble_task(void *pvParameters)
     while (1) {
         vTaskDelay(pdMS_TO_TICKS(1000)); // 每秒检查一次
     }
+}
+
+void send_data_to_phone(const uint8_t *data, size_t length)
+{
+    if (length > sizeof(tx_value)) {
+        length = sizeof(tx_value);
+    }
+
+    memcpy(tx_value, data, length);
+    tx_length = length;
+
+    // 通知已连接的客户端特征值已更改
+    bt_gatt_notify(NULL, &custom_attrs[2], tx_value, tx_length);
 }

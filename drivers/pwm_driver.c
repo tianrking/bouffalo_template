@@ -119,18 +119,19 @@ void pwm_task(void *pvParameters)
     }
 
     while (1) {
-        if (pwm_set_duty_cycle(PWM_CH0, duty_cycle) != PWM_OK ||
-            pwm_set_duty_cycle(PWM_CH1, duty_cycle) != PWM_OK ||
-            pwm_set_duty_cycle(PWM_CH2, duty_cycle) != PWM_OK) {
-            LOG_E("Failed to set PWM duty cycle\r\n");
-            break;
-        }
+        
+        // if (pwm_set_duty_cycle(PWM_CH0, duty_cycle) != PWM_OK ||
+        //     pwm_set_duty_cycle(PWM_CH1, duty_cycle) != PWM_OK ||
+        //     pwm_set_duty_cycle(PWM_CH2, duty_cycle) != PWM_OK) {
+        //     LOG_E("Failed to set PWM duty cycle\r\n");
+        //     break;
+        // }
 
-        duty_cycle += direction;
+        // duty_cycle += direction;
 
-        if (duty_cycle >= 100 || duty_cycle <= 0) {
-            direction *= -1;
-        }
+        // if (duty_cycle >= 100 || duty_cycle <= 0) {
+        //     direction *= -1;
+        // }
 
         vTaskDelay(pdMS_TO_TICKS(50));
     }

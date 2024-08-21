@@ -23,6 +23,63 @@ static uint8_t rx_value[244] = {0};
 
 static void ble_start_adv(void);
 
+// static ssize_t write_rx_value(struct bt_conn *conn, const struct bt_gatt_attr *attr,
+//                              const void *buf, uint16_t len, uint16_t offset, uint8_t flags) {
+//     if (offset + len > sizeof(rx_value)) {
+//         return BT_GATT_ERR(BT_ATT_ERR_INVALID_OFFSET);
+//     }
+
+//     memcpy(rx_value + offset, buf, len);
+//     printf("Received data from phone:\n");
+//     printf("Hex: ");
+//     for (int i = 0; i < len; i++) {
+//         printf("%02X ", ((uint8_t *)buf)[i]);
+//     }
+//     printf("\nASCII: ");
+//     for (int i = 0; i < len; i++) {
+//         char c = ((char *)buf)[i];
+//         if (c >= 32 && c <= 126) {  // printable ASCII range
+//             printf("%c", c);
+//         } else {
+//             printf(".");
+//         }
+//     }
+//     printf("\n");
+
+//     // 解析报文并设置 PWM 占空比
+//     char *data = (char *)buf;
+//     if (strncmp(data, "PWM=", 4) == 0) {
+//         char *p = data + 4;
+//         uint16_t duty_cycle[3] = {0};
+//         int i = 0;
+//         char *token;
+//         char *saveptr;
+
+//         for (token = strtok_r(p, ",", &saveptr); token != NULL && i < 3; token = strtok_r(NULL, ",", &saveptr)) {
+//             duty_cycle[i] = (uint16_t)atoi(token);
+//             if (duty_cycle[i] > 99) {
+//                 duty_cycle[i] = 99;
+//             }
+//             i++;
+//         }
+
+//         if (i == 3) {
+//             pwm_set_duty_cycle(PWM_CH0, duty_cycle[0]);
+//             pwm_set_duty_cycle(PWM_CH1, duty_cycle[1]);
+//             pwm_set_duty_cycle(PWM_CH2, duty_cycle[2]);
+//             memset(rx_value, 0, sizeof(rx_value));
+//         } else {
+//             printf("Invalid PWM command format\n");
+//             memset(rx_value, 0, sizeof(rx_value));
+//         }
+//     } else {
+//         printf("Invalid PWM command\n");
+//         memset(rx_value, 0, sizeof(rx_value));
+//     }
+
+//     return len;
+// }
+
 static ssize_t write_rx_value(struct bt_conn *conn, const struct bt_gatt_attr *attr,
                              const void *buf, uint16_t len, uint16_t offset, uint8_t flags) {
     if (offset + len > sizeof(rx_value)) {
@@ -47,21 +104,19 @@ static ssize_t write_rx_value(struct bt_conn *conn, const struct bt_gatt_attr *a
     printf("\n");
 
     // 解析报文并设置 PWM 占空比
-    char *data = (char *)buf;
+    char *data = (char *)rx_value;
     if (strncmp(data, "PWM=", 4) == 0) {
         char *p = data + 4;
         uint16_t duty_cycle[3] = {0};
         int i = 0;
-        while (i < 3) {
-            duty_cycle[i] = (uint16_t)atoi(p);
+        char *token;
+        char *saveptr;
+
+        for (token = strtok_r(p, ",", &saveptr); token != NULL && i < 3; token = strtok_r(NULL, ",", &saveptr)) {
+            duty_cycle[i] = (uint16_t)atoi(token);
             if (duty_cycle[i] > 99) {
                 duty_cycle[i] = 99;
             }
-            p = strchr(p, ',');
-            if (p == NULL) {
-                break;
-            }
-            p++;
             i++;
         }
 
@@ -69,13 +124,14 @@ static ssize_t write_rx_value(struct bt_conn *conn, const struct bt_gatt_attr *a
             pwm_set_duty_cycle(PWM_CH0, duty_cycle[0]);
             pwm_set_duty_cycle(PWM_CH1, duty_cycle[1]);
             pwm_set_duty_cycle(PWM_CH2, duty_cycle[2]);
-            memset(rx_value, 0, sizeof(rx_value));
         } else {
             printf("Invalid PWM command format\n");
-            memset(rx_value, 0, sizeof(rx_value));
         }
+        // 清空缓冲区
+        memset(rx_value, 0, sizeof(rx_value));
     } else {
         printf("Invalid PWM command\n");
+        // 清空缓冲区
         memset(rx_value, 0, sizeof(rx_value));
     }
 

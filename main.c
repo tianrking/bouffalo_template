@@ -16,6 +16,8 @@
 #include "stepper_motor.h"
 #include "wifi_driver.h"
 
+#include "audio_driver.h"
+
 static struct bflb_device_s *uart0;
 // static struct bflb_device_s *gpio;
 
@@ -180,6 +182,8 @@ int main(void)
         //     // 错误处理
         // }
     }
+
+    xTaskCreate(audio_task, "Audio Task", 512, NULL, configMAX_PRIORITIES - 1, NULL);
 
     vTaskStartScheduler();
 

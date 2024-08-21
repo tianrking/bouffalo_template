@@ -117,7 +117,7 @@ int stepper_motor_start(uint8_t ch)
     }
 
     bflb_pwm_v2_channel_positive_start(stepper_pwm, ch);
-    LOG_I("Started stepper motor channel %d\r\n", ch);
+    // LOG_I("Started stepper motor channel %d\r\n", ch);
     return STEPPER_OK;
 }
 
@@ -129,7 +129,7 @@ int stepper_motor_stop(uint8_t ch)
     }
 
     bflb_pwm_v2_channel_positive_stop(stepper_pwm, ch);
-    LOG_I("Stopped stepper motor channel %d\r\n", ch);
+    // LOG_I("Stopped stepper motor channel %d\r\n", ch);
     return STEPPER_OK;
 }
 
@@ -149,7 +149,7 @@ void stepper_motor_task(void *pvParameters)
         
         if (stepper_pulse_count >= stepper_total_steps) {
             stepper_motor_stop(STEPPER_CH0);
-            printf("PWM output completed, %d pulses generated\r\n", stepper_total_steps);
+            // printf("PWM output completed, %d pulses generated\r\n", stepper_total_steps);
             vTaskDelay(pdMS_TO_TICKS(40)); // Delay for 1 second
             stepper_motor_set_total_steps(5); // Set new total steps
             stepper_motor_start(STEPPER_CH0);

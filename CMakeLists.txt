@@ -12,6 +12,7 @@ target_sources(app PRIVATE drivers/ble_driver.c)
 target_sources(app PRIVATE drivers/pwm_driver.c)
 target_sources(app PRIVATE drivers/stepper_motor.c)
 target_sources(app PRIVATE drivers/timer_driver.c)
+target_sources(app PRIVATE drivers/audio_driver.c)
 
 sdk_set_main_file(main.c)
 

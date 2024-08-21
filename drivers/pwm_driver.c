@@ -1,97 +1,145 @@
-#include <FreeRTOS.h>
-#include "task.h"
 #include "pwm_driver.h"
 #include "bflb_gpio.h"
-#include "bflb_mtimer.h"
-#include "board.h"
 #include "bflb_clock.h"
+#include "bflb_pwm_v2.h"
+#include "log.h"
 
-struct bflb_device_s *pwm;
-struct bflb_device_s *gpio;
-struct bflb_pwm_v2_config_s cfg;
+#define DBG_TAG "PWM"
 
-void pwm_driver_init(void)
+static struct bflb_device_s *pwm;
+static struct bflb_device_s *gpio;
+
+bool pwm_driver_init(void)
 {
+    LOG_I("Initializing PWM driver\r\n");
+
     gpio = bflb_device_get_by_name("gpio");
-
-    // 配置 GPIO0 为 PWM_CH0 输出
-    bflb_gpio_init(gpio, GPIO_PIN_0, GPIO_FUNC_PWM0 | GPIO_ALTERNATE | GPIO_PULLUP | GPIO_SMT_EN | GPIO_DRV_1);
-    // 配置 GPIO1 为 PWM_CH1 输出
-    bflb_gpio_init(gpio, GPIO_PIN_1, GPIO_FUNC_PWM0 | GPIO_ALTERNATE | GPIO_PULLUP | GPIO_SMT_EN | GPIO_DRV_1);
-    // 配置 GPIO30 为 PWM_CH2 输出
-    bflb_gpio_init(gpio, GPIO_PIN_30, GPIO_FUNC_PWM0 | GPIO_ALTERNATE | GPIO_PULLUP | GPIO_SMT_EN | GPIO_DRV_1);
-
     pwm = bflb_device_get_by_name("pwm_v2_0");
 
-    /* period = .XCLK / .clk_div / .period = 80MHz / 80 / 1000 = 1kHz */
-    cfg = (struct bflb_pwm_v2_config_s) {
-        .clk_source = BFLB_SYSTEM_XCLK,
-        .clk_div = 80,
-        .period = 1000,
+    if (gpio == NULL || pwm == NULL) {
+        LOG_E("Failed to get device handles\r\n");
+        return false;
+    }
+
+    // Configure GPIO pins for PWM output
+    bflb_gpio_init(gpio, PWM_PIN_CH0, GPIO_FUNC_PWM0 | GPIO_ALTERNATE | GPIO_PULLDOWN | GPIO_SMT_EN | GPIO_DRV_1);
+    bflb_gpio_init(gpio, PWM_PIN_CH1, GPIO_FUNC_PWM0 | GPIO_ALTERNATE | GPIO_PULLDOWN | GPIO_SMT_EN | GPIO_DRV_1);
+    bflb_gpio_init(gpio, PWM_PIN_CH2, GPIO_FUNC_PWM0 | GPIO_ALTERNATE | GPIO_PULLDOWN | GPIO_SMT_EN | GPIO_DRV_1);
+
+    // Configure PWM
+    struct bflb_pwm_v2_config_s cfg = {
+        .clk_source = BFLB_SYSTEM_PBCLK,
+        .clk_div = 80,  // Assuming PBCLK is 80MHz, this gives 1MHz PWM clock
+        .period = 1000, // 1MHz / 1000 = 1kHz
     };
 
     bflb_pwm_v2_init(pwm, &cfg);
+    // Configure PWM channels
+    struct bflb_pwm_v2_channel_config_s ch_cfg = {
+        .positive_polarity = PWM_POLARITY_ACTIVE_HIGH,
+        .negative_polarity = PWM_POLARITY_ACTIVE_HIGH,
+        .positive_stop_state = PWM_STATE_INACTIVE,
+        .negative_stop_state = PWM_STATE_INACTIVE,
+        .positive_brake_state = PWM_STATE_INACTIVE,
+        .negative_brake_state = PWM_STATE_INACTIVE,
+        .dead_time = 0,
+    };
 
-    bflb_pwm_v2_channel_positive_start(pwm, PWM_CH0);
-    bflb_pwm_v2_channel_positive_start(pwm, PWM_CH1);
-    bflb_pwm_v2_channel_positive_start(pwm, PWM_CH2);
+    bflb_pwm_v2_channel_init(pwm, PWM_CH0, &ch_cfg);
+    bflb_pwm_v2_channel_init(pwm, PWM_CH1, &ch_cfg);
+    bflb_pwm_v2_channel_init(pwm, PWM_CH2, &ch_cfg);
 
-    // 设置初始占空比为0
+    // Set initial duty cycle to 0 (low level)
     pwm_set_duty_cycle(PWM_CH0, 0);
     pwm_set_duty_cycle(PWM_CH1, 0);
     pwm_set_duty_cycle(PWM_CH2, 0);
 
+    // Start PWM
     bflb_pwm_v2_start(pwm);
+
+    LOG_I("PWM driver initialized successfully\r\n");
+    return true;
 }
 
-void pwm_set_duty_cycle(uint8_t ch, uint16_t duty_cycle)
+int pwm_set_duty_cycle(uint8_t ch, uint8_t duty_cycle)
 {
-    // 确保 duty_cycle 在 0-100 之间
+    if (ch >= PWM_V2_CH_MAX) {
+        LOG_E("Invalid PWM channel: %d\r\n", ch);
+        return PWM_ERROR_INVALID_CHANNEL;
+    }
+
     if (duty_cycle > 100) {
         duty_cycle = 100;
     }
 
-    // 计算低电平和高电平的阈值
-    uint16_t threshold_low = (uint16_t)(((float)duty_cycle / 100.0f) * cfg.period);
-    uint16_t threshold_high = cfg.period;
+    uint16_t threshold = (uint16_t)(((float)duty_cycle / 100.0f) * 1000);
+    bflb_pwm_v2_channel_set_threshold(pwm, ch, 0, threshold);
 
-    // 设置 PWM 通道的阈值
-    bflb_pwm_v2_channel_set_threshold(pwm, ch, threshold_low, threshold_high);
+    LOG_I("Set PWM channel %d duty cycle to %d%%\r\n", ch, duty_cycle);
+    return PWM_OK;
 }
 
-// void pwm_task(void *pvParameters)
-// {
-//     while (1) {
-//         // 这里不再自动改变占空比,而是等待蓝牙命令
-//         vTaskDelay(pdMS_TO_TICKS(1000)); // 每秒检查一次
-//     }
-// }
+int pwm_start(uint8_t ch)
+{
+    if (ch >= PWM_V2_CH_MAX) {
+        LOG_E("Invalid PWM channel: %d\r\n", ch);
+        return PWM_ERROR_INVALID_CHANNEL;
+    }
 
-void pwm_task(void *pvParameters) {
-    uint16_t duty_cycle = 0;
-    int8_t direction = 1;  // 1 表示增加，-1 表示减少
+    bflb_pwm_v2_channel_positive_start(pwm, ch);
+    LOG_I("Started PWM channel %d\r\n", ch);
+    return PWM_OK;
+}
+
+int pwm_stop(uint8_t ch)
+{
+    if (ch >= PWM_V2_CH_MAX) {
+        LOG_E("Invalid PWM channel: %d\r\n", ch);
+        return PWM_ERROR_INVALID_CHANNEL;
+    }
+
+    bflb_pwm_v2_channel_positive_stop(pwm, ch);
+    LOG_I("Stopped PWM channel %d\r\n", ch);
+    return PWM_OK;
+}
+
+void pwm_task(void *pvParameters)
+{
+    uint8_t duty_cycle = 0;
+    int8_t direction = 1;
+
+    LOG_I("PWM task started\r\n");
+
+    if (pwm_start(PWM_CH0) != PWM_OK ||
+        pwm_start(PWM_CH1) != PWM_OK ||
+        pwm_start(PWM_CH2) != PWM_OK) {
+        LOG_E("Failed to start PWM channels\r\n");
+        vTaskDelete(NULL);
+        return;
+    }
 
     while (1) {
-        // 设置所有三个通道的占空比
-        pwm_set_duty_cycle(PWM_CH0, duty_cycle);
-        pwm_set_duty_cycle(PWM_CH1, duty_cycle);
-        pwm_set_duty_cycle(PWM_CH2, duty_cycle);
-
-        printf("Current duty cycle: %d%%\n", duty_cycle);
-
-        // 更新占空比
-        duty_cycle += direction;
-
-        // 检查是否需要改变方向
-        if (duty_cycle >= 100) {
-            duty_cycle = 100;
-            direction = -1;
-        } else if (duty_cycle <= 0) {
-            duty_cycle = 0;
-            direction = 1;
+        if (pwm_set_duty_cycle(PWM_CH0, duty_cycle) != PWM_OK ||
+            pwm_set_duty_cycle(PWM_CH1, duty_cycle) != PWM_OK ||
+            pwm_set_duty_cycle(PWM_CH2, duty_cycle) != PWM_OK) {
+            LOG_E("Failed to set PWM duty cycle\r\n");
+            break;
         }
 
-        // 等待一秒
-        vTaskDelay(pdMS_TO_TICKS(1000));
+        duty_cycle += direction;
+
+        if (duty_cycle >= 100 || duty_cycle <= 0) {
+            direction *= -1;
+        }
+
+        vTaskDelay(pdMS_TO_TICKS(50));
     }
+
+    // If we've broken out of the loop due to an error, stop all PWM channels
+    pwm_stop(PWM_CH0);
+    pwm_stop(PWM_CH1);
+    pwm_stop(PWM_CH2);
+
+    LOG_E("PWM task ended unexpectedly\r\n");
+    vTaskDelete(NULL);
 }

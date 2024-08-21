@@ -151,9 +151,19 @@ int main(void)
     //Create BLE task
     xTaskCreate(ble_task, "ble_task", 1024, NULL, configMAX_PRIORITIES - 2, NULL);
     
-    // pwm_driver_init();
-    //Create PWM task  
-    // xTaskCreate(pwm_task, "pwm_task", 256, NULL, configMAX_PRIORITIES - 1, NULL);
+    if (!pwm_driver_init()) {
+        LOG_E("PWM driver initialization failed\r\n");
+        // while (1) {
+        //     // 错误处理
+        // }
+    }
+
+    if (xTaskCreate(pwm_task, "pwm_task", 512, NULL, configMAX_PRIORITIES - 1, NULL) != pdPASS) {
+        LOG_E("Failed to create PWM task\r\n");
+        // while (1) {
+        //     // 错误处理
+        // }
+    }
 
     // gpio = bflb_device_get_by_name("gpio");
     // xTaskCreate(stepper_motor_task, "stepper_motor_task", 256, gpio, configMAX_PRIORITIES - 1, NULL);

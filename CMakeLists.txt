@@ -10,9 +10,15 @@ sdk_add_compile_definitions(-DCONFIG_CLI_CMD_ENABLE)
 
 target_sources(app PRIVATE
                    wifi_http_client.c
+                   drivers/ble_driver.c
+                   drivers/led_driver.c
+                   drivers/pwm_driver.c
+                   drivers/stepper_motor.c
+                   drivers/timer_driver.c
                    )
 
 sdk_add_include_directories(.)
+sdk_add_include_directories(drivers)
 
 sdk_set_main_file(main.c)
 

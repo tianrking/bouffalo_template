@@ -22,19 +22,20 @@
 #define DBG_TAG "MAIN"
 #include "log.h"
 
-#define WIFI_STACK_SIZE  (1536)
-#define TASK_PRIORITY_FW (16)
+#define AP_STACK_SIZE  (1536)
+#define TASK_PRIORITY_AP (16)
 
 static struct bflb_device_s *uart0;
-static TaskHandle_t wifi_fw_task;
+static TaskHandle_t ap_task_handle;
 
 static wifi_conf_t conf = {
     .country_code = "CN",
 };
 
-// WiFi connection information
-static const char *wifi_ssid = "KUNIU";
-static const char *wifi_password = "kuniu666";
+// AP configuration
+static const char *ap_ssid = "MyWiFiAP";
+static const char *ap_password = "myappassword";
+static const int ap_channel = 6;
 
 extern void shell_init_with_task(struct bflb_device_s *shell);
 
@@ -49,66 +50,72 @@ int wifi_start_firmware_task(void)
     bflb_irq_attach(WIFI_IRQn, (irq_callback)interrupt0_handler, NULL);
     bflb_irq_enable(WIFI_IRQn);
 
-    xTaskCreate(wifi_main, (char *)"fw", WIFI_STACK_SIZE, NULL, TASK_PRIORITY_FW, &wifi_fw_task);
+    xTaskCreate(wifi_main, (char *)"fw", AP_STACK_SIZE, NULL, TASK_PRIORITY_AP, &ap_task_handle);
 
     return 0;
 }
 
-void wifi_connect_task(void *pvParameters)
+void ap_task(void *pvParameters)
 {
-    wifi_mgmr_sta_connect_params_t connect_params = {0};
+    wifi_mgmr_ap_params_t ap_params = {
+        .ssid = ap_ssid,
+        .key = ap_password,
+        .channel = ap_channel,
+        .use_dhcpd = true,
+        .ap_max_inactivity = 300, // 5 minutes inactivity timeout
+    };
     
-    // Set up connection parameters
-    strncpy((char *)connect_params.ssid, wifi_ssid, sizeof(connect_params.ssid) - 1);
-    connect_params.ssid_len = strlen(wifi_ssid);
-    strncpy((char *)connect_params.key, wifi_password, sizeof(connect_params.key) - 1);
-    connect_params.key_len = strlen(wifi_password);
-    connect_params.use_dhcp = 1;
-    connect_params.pmf_cfg = 0;  // Disable PMF for older routers
-    connect_params.quick_connect = 1;  // Enable quick connect
-
     while (1) {
-        if (wifi_mgmr_sta_state_get() == 0) {  // If not connected
-            LOG_I("Connecting to WiFi: %s\r\n", wifi_ssid);
-            int ret = wifi_mgmr_sta_connect(&connect_params);
+        if (wifi_mgmr_ap_state_get() == 0) {  // If AP is not started
+            LOG_I("Starting AP: %s\r\n", ap_ssid);
+            int ret = wifi_mgmr_ap_start(&ap_params);
             if (ret != 0) {
-                LOG_E("Failed to initiate WiFi connection, error code: %d\r\n", ret);
+                LOG_E("Failed to start AP, error code: %d\r\n", ret);
             }
         } else {
-            int state = wifi_mgmr_sta_state_get();
-            LOG_I("Current WiFi state: %d\r\n", state);
+            // AP is running, you can add periodic checks or management tasks here
+            uint8_t sta_count = 0;
+            struct wifi_sta_basic_info sta_info;
+            
+            for (int i = 0; i < 4; i++) {  // Assuming max 4 stations, adjust as needed
+                if (wifi_mgmr_ap_sta_info_get(&sta_info, i) == 0) {
+                    sta_count++;
+                    LOG_I("STA %d connected, MAC: %02X:%02X:%02X:%02X:%02X:%02X\r\n", 
+                          i, sta_info.sta_mac[0], sta_info.sta_mac[1], sta_info.sta_mac[2],
+                          sta_info.sta_mac[3], sta_info.sta_mac[4], sta_info.sta_mac[5]);
+                }
+            }
+            LOG_I("Total connected stations: %d\r\n", sta_count);
         }
-        vTaskDelay(pdMS_TO_TICKS(5000));  // Check every 5 seconds
+        vTaskDelay(pdMS_TO_TICKS(10000));  // Check every 10 seconds
     }
 }
 
 void wifi_event_handler(uint32_t code)
 {
     switch (code) {
-        case CODE_WIFI_ON_INIT_DONE: {
+        case CODE_WIFI_ON_INIT_DONE:
             LOG_I("[APP] [EVT] CODE_WIFI_ON_INIT_DONE\r\n");
             wifi_mgmr_init(&conf);
-        } break;
-        case CODE_WIFI_ON_MGMR_DONE: {
+            break;
+        case CODE_WIFI_ON_MGMR_DONE:
             LOG_I("[APP] [EVT] CODE_WIFI_ON_MGMR_DONE\r\n");
-            xTaskCreate(wifi_connect_task, (char *)"wifi_connect", WIFI_STACK_SIZE, NULL, TASK_PRIORITY_FW - 1, NULL);
-        } break;
-        case CODE_WIFI_ON_SCAN_DONE: {
-            LOG_I("[APP] [EVT] CODE_WIFI_ON_SCAN_DONE\r\n");
-        } break;
-        case CODE_WIFI_ON_CONNECTED: {
-            LOG_I("[APP] [EVT] CODE_WIFI_ON_CONNECTED\r\n");
-        } break;
-        case CODE_WIFI_ON_GOT_IP: {
-            LOG_I("[APP] [EVT] CODE_WIFI_ON_GOT_IP\r\n");
-            LOG_I("[SYS] Memory left is %d Bytes\r\n", kfree_size());
-        } break;
-        case CODE_WIFI_ON_DISCONNECT: {
-            LOG_I("[APP] [EVT] CODE_WIFI_ON_DISCONNECT\r\n");
-        } break;
-        default: {
+            xTaskCreate(ap_task, (char *)"ap_task", AP_STACK_SIZE, NULL, TASK_PRIORITY_AP - 1, NULL);
+            break;
+        case CODE_WIFI_ON_AP_STARTED:
+            LOG_I("[APP] [EVT] CODE_WIFI_ON_AP_STARTED\r\n");
+            break;
+        case CODE_WIFI_ON_AP_STOPPED:
+            LOG_I("[APP] [EVT] CODE_WIFI_ON_AP_STOPPED\r\n");
+            break;
+        case CODE_WIFI_ON_AP_STA_ADD:
+            LOG_I("[APP] [EVT] CODE_WIFI_ON_AP_STA_ADD\r\n");
+            break;
+        case CODE_WIFI_ON_AP_STA_DEL:
+            LOG_I("[APP] [EVT] CODE_WIFI_ON_AP_STA_DEL\r\n");
+            break;
+        default:
             LOG_I("[APP] [EVT] Unknown code %u \r\n", code);
-        }
     }
 }
 

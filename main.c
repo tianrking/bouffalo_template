@@ -36,7 +36,7 @@
 
 #define SERVER_PORT 80
 #define MAX_CONNECTIONS 5
-#define BUFFER_SIZE 1024
+#define BUFFER_SIZE 2048
 
 static struct bflb_device_s *uart0;
 static TaskHandle_t wifi_fw_task;
@@ -56,6 +56,22 @@ void wifi_connect_task(void *pvParameters);
 void server_task(void *pvParameters);
 void handle_client(int client_sock);
 void baidu_request_task(void *pvParameters);
+
+// HTML page template
+const char *html_page = "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n"
+                        "<!DOCTYPE html>"
+                        "<html>"
+                        "<head>"
+                        "<title>BL616 Control</title>"
+                        "</head>"
+                        "<body>"
+                        "<h1>BL616 Control Panel</h1>"
+                        "<form method='post' action='/submit'>"
+                        "<input type='text' name='command' placeholder='Enter command'>"
+                        "<input type='submit' value='Send'>"
+                        "</form>"
+                        "</body>"
+                        "</html>";
 
 int wifi_start_firmware_task(void)
 {
@@ -160,7 +176,10 @@ void handle_client(int client_sock)
         buffer[received] = '\0';
         LOG_I("Received request:\r\n%s\r\n", buffer);
 
-        if (strstr(buffer, "POST") != NULL) {
+        if (strstr(buffer, "GET / ") != NULL) {
+            // Send the HTML page
+            write(client_sock, html_page, strlen(html_page));
+        } else if (strstr(buffer, "POST /submit") != NULL) {
             // Extract POST data and process it
             char *body = strstr(buffer, "\r\n\r\n");
             if (body) {
@@ -168,13 +187,20 @@ void handle_client(int client_sock)
                 LOG_I("POST data: %s\r\n", body);
                 
                 // Process the POST data here
-                // For example, you can control LED or other peripherals based on the received data
-                
-                const char *response = "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\n\r\nPOST request received and processed\r\n";
-                write(client_sock, response, strlen(response));
+                // For example, you can control LED or other peripherals based on the received command
+                char *command = strstr(body, "command=");
+                if (command) {
+                    command += 8;  // Skip "command="
+                    LOG_I("Received command: %s\r\n", command);
+                    
+                    // TODO: Add your command processing logic here
+                    
+                    const char *response = "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\n\r\nCommand received and processed\r\n";
+                    write(client_sock, response, strlen(response));
+                }
             }
         } else {
-            const char *response = "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\n\r\nHello from BL616 Server\r\n";
+            const char *response = "HTTP/1.1 404 Not Found\r\nContent-Type: text/plain\r\n\r\nNot Found\r\n";
             write(client_sock, response, strlen(response));
         }
     }

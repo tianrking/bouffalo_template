@@ -34,6 +34,10 @@
 #define WIFI_STACK_SIZE  (1536)
 #define TASK_PRIORITY_FW (16)
 
+#define SERVER_PORT 80
+#define MAX_CONNECTIONS 5
+#define BUFFER_SIZE 1024
+
 static struct bflb_device_s *uart0;
 static TaskHandle_t wifi_fw_task;
 
@@ -46,6 +50,12 @@ static const char *wifi_ssid = "KUNIU";
 static const char *wifi_password = "kuniu666";
 
 extern void shell_init_with_task(struct bflb_device_s *shell);
+
+// Function prototypes
+void wifi_connect_task(void *pvParameters);
+void server_task(void *pvParameters);
+void handle_client(int client_sock);
+void baidu_request_task(void *pvParameters);
 
 int wifi_start_firmware_task(void)
 {
@@ -67,120 +77,191 @@ void wifi_connect_task(void *pvParameters)
 {
     wifi_mgmr_sta_connect_params_t connect_params = {0};
     
-    // Set up connection parameters
     strncpy((char *)connect_params.ssid, wifi_ssid, sizeof(connect_params.ssid) - 1);
     connect_params.ssid_len = strlen(wifi_ssid);
     strncpy((char *)connect_params.key, wifi_password, sizeof(connect_params.key) - 1);
     connect_params.key_len = strlen(wifi_password);
     connect_params.use_dhcp = 1;
-    connect_params.pmf_cfg = 0;  // Disable PMF for older routers
-    connect_params.quick_connect = 1;  // Enable quick connect
+    connect_params.pmf_cfg = 0;
+    connect_params.quick_connect = 1;
 
-    // Set up the DNS server
     ip4_addr_t dns_server;
-    IP4_ADDR(&dns_server, 119, 29, 29, 29);  // Use 119.29.29.29 as the DNS server
+    IP4_ADDR(&dns_server, 119, 29, 29, 29);
     dns_setserver(0, &dns_server);
 
     while (1) {
-        if (wifi_mgmr_sta_state_get() == 0) {  // If not connected
+        if (wifi_mgmr_sta_state_get() == 0) {
             LOG_I("Connecting to WiFi: %s\r\n", wifi_ssid);
             int ret = wifi_mgmr_sta_connect(&connect_params);
             if (ret != 0) {
                 LOG_E("Failed to initiate WiFi connection, error code: %d\r\n", ret);
             }
         } else {
-            int state = wifi_mgmr_sta_state_get();
-            LOG_I("Current WiFi state: %d\r\n", state);
-            LOG_I("WiFi connection successful!\r\n");
-
-            if (wifi_mgmr_sta_state_get() != 0) {  // Check if WiFi is connected
-                // HTTP client code
-                struct hostent *host;
-                struct sockaddr_in server_addr;
-                int sock, bytes_received;
-                char recv_buf[1024] = {0};
-
-                host = gethostbyname("www.baidu.com");
-                if (host == NULL) {
-                    printf("Failed to resolve Baidu's IP address\n");
-                    // Use Baidu's IP address directly
-                    server_addr.sin_addr.s_addr = inet_addr("180.97.33.108");
-                } else {
-                    server_addr.sin_addr.s_addr = *((unsigned long *)host->h_addr);
-                }
-
-                if ((sock = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
-                    printf("Failed to create socket\n");
-                    vTaskDelay(pdMS_TO_TICKS(10000));
-                    continue;
-                }
-
-                server_addr.sin_family = AF_INET;
-                server_addr.sin_port = htons(80);
-
-                if (connect(sock, (struct sockaddr *)&server_addr, sizeof(server_addr)) < 0) {
-                    printf("Failed to connect to Baidu\n");
-                    closesocket(sock);
-                    vTaskDelay(pdMS_TO_TICKS(10000));
-                    continue;
-                }
-
-                printf("Connected to Baidu\n");
-
-                const char *request = "GET / HTTP/1.1\r\nHost: www.baidu.com\r\n\r\n";
-                write(sock, request, strlen(request));
-
-                printf("HTTP request sent\n");
-
-                bytes_received = read(sock, recv_buf, sizeof(recv_buf) - 1);
-                if (bytes_received > 0) {
-                    recv_buf[bytes_received] = '\0';
-                    printf("HTTP response:\n%s\n", recv_buf);
-                } else {
-                    printf("Failed to receive HTTP response\n");
-                }
-
-                closesocket(sock);
-                printf("HTTP client task finished\n");
-            } else {
-                LOG_I("WiFi is not connected, skipping HTTP request\r\n");
-                vTaskDelay(pdMS_TO_TICKS(10000));
-                continue;
-            }
-
-            vTaskDelay(pdMS_TO_TICKS(10000));
+            LOG_I("WiFi connected. Starting server and Baidu request tasks.\r\n");
+            xTaskCreate(server_task, (char *)"server", WIFI_STACK_SIZE, NULL, TASK_PRIORITY_FW - 1, NULL);
+            xTaskCreate(baidu_request_task, (char *)"baidu_request", WIFI_STACK_SIZE, NULL, TASK_PRIORITY_FW - 1, NULL);
+            break;
         }
         vTaskDelay(pdMS_TO_TICKS(10000));
+    }
+    vTaskDelete(NULL);
+}
+
+void server_task(void *pvParameters)
+{
+    int server_sock, client_sock;
+    struct sockaddr_in server_addr, client_addr;
+    socklen_t client_len = sizeof(client_addr);
+
+    server_sock = socket(AF_INET, SOCK_STREAM, 0);
+    if (server_sock < 0) {
+        LOG_E("Failed to create socket\r\n");
+        vTaskDelete(NULL);
+    }
+
+    memset(&server_addr, 0, sizeof(server_addr));
+    server_addr.sin_family = AF_INET;
+    server_addr.sin_addr.s_addr = htonl(INADDR_ANY);
+    server_addr.sin_port = htons(SERVER_PORT);
+
+    if (bind(server_sock, (struct sockaddr*)&server_addr, sizeof(server_addr)) < 0) {
+        LOG_E("Failed to bind socket\r\n");
+        closesocket(server_sock);
+        vTaskDelete(NULL);
+    }
+
+    if (listen(server_sock, MAX_CONNECTIONS) < 0) {
+        LOG_E("Failed to listen on socket\r\n");
+        closesocket(server_sock);
+        vTaskDelete(NULL);
+    }
+
+    LOG_I("Server listening on port %d\r\n", SERVER_PORT);
+
+    while (1) {
+        client_sock = accept(server_sock, (struct sockaddr*)&client_addr, &client_len);
+        if (client_sock < 0) {
+            LOG_E("Failed to accept client connection\r\n");
+            continue;
+        }
+
+        LOG_I("New client connected\r\n");
+        handle_client(client_sock);
+    }
+}
+
+void handle_client(int client_sock)
+{
+    char buffer[BUFFER_SIZE];
+    int received;
+
+    received = read(client_sock, buffer, BUFFER_SIZE - 1);
+    if (received > 0) {
+        buffer[received] = '\0';
+        LOG_I("Received request:\r\n%s\r\n", buffer);
+
+        if (strstr(buffer, "POST") != NULL) {
+            // Extract POST data and process it
+            char *body = strstr(buffer, "\r\n\r\n");
+            if (body) {
+                body += 4;  // Skip the empty line
+                LOG_I("POST data: %s\r\n", body);
+                
+                // Process the POST data here
+                // For example, you can control LED or other peripherals based on the received data
+                
+                const char *response = "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\n\r\nPOST request received and processed\r\n";
+                write(client_sock, response, strlen(response));
+            }
+        } else {
+            const char *response = "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\n\r\nHello from BL616 Server\r\n";
+            write(client_sock, response, strlen(response));
+        }
+    }
+
+    closesocket(client_sock);
+}
+
+void baidu_request_task(void *pvParameters)
+{
+    while (1) {
+        struct hostent *host;
+        struct sockaddr_in server_addr;
+        int sock, bytes_received;
+        char recv_buf[1024] = {0};
+
+        host = gethostbyname("www.baidu.com");
+        if (host == NULL) {
+            LOG_E("Failed to resolve Baidu's IP address\n");
+            server_addr.sin_addr.s_addr = inet_addr("180.97.33.108");
+        } else {
+            server_addr.sin_addr.s_addr = *((unsigned long *)host->h_addr);
+        }
+
+        if ((sock = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
+            LOG_E("Failed to create socket\n");
+            vTaskDelay(pdMS_TO_TICKS(10000));
+            continue;
+        }
+
+        server_addr.sin_family = AF_INET;
+        server_addr.sin_port = htons(80);
+
+        if (connect(sock, (struct sockaddr *)&server_addr, sizeof(server_addr)) < 0) {
+            LOG_E("Failed to connect to Baidu\n");
+            closesocket(sock);
+            vTaskDelay(pdMS_TO_TICKS(10000));
+            continue;
+        }
+
+        LOG_I("Connected to Baidu\n");
+
+        const char *request = "GET / HTTP/1.1\r\nHost: www.baidu.com\r\n\r\n";
+        write(sock, request, strlen(request));
+
+        LOG_I("HTTP request sent to Baidu\n");
+
+        bytes_received = read(sock, recv_buf, sizeof(recv_buf) - 1);
+        if (bytes_received > 0) {
+            recv_buf[bytes_received] = '\0';
+            LOG_I("HTTP response from Baidu:\n%s\n", recv_buf);
+        } else {
+            LOG_E("Failed to receive HTTP response from Baidu\n");
+        }
+
+        closesocket(sock);
+        LOG_I("Baidu request task completed\n");
+
+        vTaskDelay(pdMS_TO_TICKS(60000)); // Wait for 1 minute before next request
     }
 }
 
 void wifi_event_handler(uint32_t code)
 {
     switch (code) {
-        case CODE_WIFI_ON_INIT_DONE: {
+        case CODE_WIFI_ON_INIT_DONE:
             LOG_I("[APP] [EVT] CODE_WIFI_ON_INIT_DONE\r\n");
             wifi_mgmr_init(&conf);
-        } break;
-        case CODE_WIFI_ON_MGMR_DONE: {
+            break;
+        case CODE_WIFI_ON_MGMR_DONE:
             LOG_I("[APP] [EVT] CODE_WIFI_ON_MGMR_DONE\r\n");
             xTaskCreate(wifi_connect_task, (char *)"wifi_connect", WIFI_STACK_SIZE, NULL, TASK_PRIORITY_FW - 1, NULL);
-        } break;
-        case CODE_WIFI_ON_SCAN_DONE: {
+            break;
+        case CODE_WIFI_ON_SCAN_DONE:
             LOG_I("[APP] [EVT] CODE_WIFI_ON_SCAN_DONE\r\n");
-        } break;
-        case CODE_WIFI_ON_CONNECTED: {
+            break;
+        case CODE_WIFI_ON_CONNECTED:
             LOG_I("[APP] [EVT] CODE_WIFI_ON_CONNECTED\r\n");
-        } break;
-        case CODE_WIFI_ON_GOT_IP: {
+            break;
+        case CODE_WIFI_ON_GOT_IP:
             LOG_I("[APP] [EVT] CODE_WIFI_ON_GOT_IP\r\n");
             LOG_I("[SYS] Memory left is %d Bytes\r\n", kfree_size());
-        } break;
-        case CODE_WIFI_ON_DISCONNECT: {
-            // LOG_I("[APP] [EVT] CODE_WIFI_ON_DISCONNECT\r\n");
-        } break;
-        default: {
+            break;
+        case CODE_WIFI_ON_DISCONNECT:
+            LOG_I("[APP] [EVT] CODE_WIFI_ON_DISCONNECT\r\n");
+            break;
+        default:
             LOG_I("[APP] [EVT] Unknown code %u \r\n", code);
-        }
     }
 }
 

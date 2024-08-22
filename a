@@ -1,0 +1,84 @@
+> key:<kuniu666>/<8> akm:<>/<0> 0-0-0-1
+start connecting ... 
+WPA network 0: created and configuredStarting AP scan for specific SSID: KUNIU, ssid_len:5, BSSID: 00:00:00:00:00:00 
+�[WPA] CTRL-EVENT-BSS-ADDED 0 BE:E0:01:94:10:E4
+�[WPA] CTRL-EVENT-SCAN-RESULTS 
+�[WPA] Trying to associate with BE:E0:01:94:10:E4 (SSID='KUNIU' freq=2462 MHz)
+--- OPT rxu_mgmt_ind is detected
+rc_init: station_id=3 format_mod=2 pre_type=1 short_gi=1 max_bw=0
+rc_init: nss_max=0 mcs_max=7 r_idx_min=0 r_idx_max=3 no_samples=10
+[FU]Set timer,state is 5,ongoing++
+[FU]Tx cfm ongoing--, value is 0
+[FL]RECV AUTH,sn:1205
+[FU]RECV AUTH,sn:1205
+[FU]Rx handler,state:5,fctl:0xb0
+[FU]Clear timer in auth handler
+[FU]Set timer,state is 8,ongoing++
+[FU]Tx cfm ongoing--, value is 0
+[FL]RECV ASSOCRSP,sn:0
+[FU]RECV ASSOCRSP,sn:0
+[FU]Rx handler,state:8,fctl:0x10
+[FU]Clear timer in assoc rsp handler
+�[WPA] Associated with BE:E0:01:94:10:E4
+�[WPA] CTRL-EVENT-SUBNET-STATUS-UPDATE status=0
+[FU] rcv eapol 888e
+[FU] rcv eapol 888e
+�[WPA] WPA: Key negotiation completed with BE:E0:01:94:10:E4 [PTK=CCMP GTK=CCMP]
+�[WPA] CTRL-EVENT-CONNECTED - Connection to BE:E0:01:94:10:E4 completed [id=0 id_str=]
+wpa_supplicant_ctrl_iface_msg_cb: cmd send succeded, txt is CTRL-EVENT-CONNECTED - Connection to BE:E0:01:94:10:E4 completed [id=0 id_str=]
+=================================================================
+[AT][RX] Connection Status
+[AT][RX]   status_code 0
+[AT][RX]   reason_code 0
+[AT][RX]   status detail: sm connect ind ok
+[AT][RX]   MAC BE:E0:01:94:10:E4
+[AT][RX]   vif_idx 1
+[AT][RX]   ap_idx 3
+[AT][RX]   ch_idx 0
+[AT][RX]   qos 1
+[AT][RX]   aid 2
+[AT][RX]   band 2.4G
+[AT][RX]   channel 11
+=================================================================
+[I][MAIN] [APP] [EVT] CODE_WIFI_ON_CONNECTED
+ IP:192.168.0.166
+ MASK: 255.255.255.0
+ Gateway: 192.168.0.1
+��==========================  Keyram Config ========================
+��  start 08 -->> end 11; nVAP 02; max 31
+==========================  Keyram Dump =========================
+[id]   MAC Address     Key Len  VLan ID  Default      	Key Hexdump(16Bytes MAX)
+[00] FF:FF:FF:FF:FF:FF  64-Bit    00        0��     00000000 00000000 00000000 00000000
+[01] FF:FF:FF:FF:FF:FF  64-Bit    00        0��     00000000 00000000 00000000 00000000
+[02] FF:FF:FF:FF:FF:FF  64-Bit    00        0��     00000000 00000000 00000000 00000000
+[03] FF:FF:FF:FF:FF:FF  64-Bit    00        0��     00000000 00000000 00000000 00000000
+[04] FF:FF:FF:FF:FF:FF  64-Bit    00        0��     00000000 00000000 00000000 00000000
+[05] FF:FF:FF:FF:FF:FF  64-Bit    00        0��     00000000 00000000 00000000 00000000
+[06] FF:FF:FF:FF:FF:FF  64-Bit    01        0��     26A6F450 5D8EE1E9 6233B8D6 47BE14DF
+[07] FF:FF:FF:FF:FF:FF  64-Bit    00        0��     00000000 00000000 00000000 00000000
+[08] FF:FF:FF:FF:FF:FF  64-Bit    00        0��     00000000 00000000 00000000 00000000
+[09] FF:FF:FF:FF:FF:FF  64-Bit    00        0��     00000000 00000000 00000000 00000000
+[10] FF:FF:FF:FF:FF:FF  64-Bit    00        0��     00000000 00000000 00000000 00000000
+[11] BE:E0:01:94:10:E4  64-Bit    01        0��     49A3187F F9848C48 EEC1AB4D B9BFB37C
+==========================  MAC Address =========================
+    MAC B4:C2:E0:B1:10:2B Mask 00:00:00:00:00:00
+  BSSID BE:E0:01:94:10:E4 Mask 00:00:00:00:00:00
+[FU]SEND DEAUTH DA: BE:E0:01:94:10:E4 SA: B4:C2:E0:B1:10:2B BSSID: BE:E0:01:94:10:E4 rea_code: 3 sn: 90
+=================================================================
+[AT][RX] Connection Status
+[AT][RX]   status_code 19
+[AT][RX]   reason_code 0
+[AT][RX]   status detail: user disconnect and send deauth
+[AT][RX]   vif_idx 1
+=================================================================
+[I][MAIN] [APP] [EVT] CODE_WIFI_ON_DISCONNECT
+�[WPA] CTRL-EVENT-DISCONNECTED bssid=BE:E0:01:94:10:E4 reason=3 locally_generated=1
+�[WPA] CTRL-EVENT-BSS-REMOVED 0 BE:E0:01:94:10:E4
+Exec key_mgmt WPA-PSK WPA-PSK-SHA256 SAE
+Exec pairwise TKIP CCMP GCMP GCMP-256 CCMP-256
+Exec group TKIP CCMP GCMP GCMP-256 CCMP-256
+Exec ieee80211w 0
+Exec scan_ssid 1
+Exec ssid KUNIU
+Exec psk kuniu666
+

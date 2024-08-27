@@ -14,11 +14,13 @@ demo test on bl616 AI-M62-32S
 
 ## ENV
 
+```bash
 git clone  https://github.com/bouffalolab/bouffalo_sdk ~/BL_PATH
 pushd ~BL_PATH
 git submodule update --init --recursive
 popd
 export BL_PATH = ~/BL_PATH
+```
 
 ## Compile
 

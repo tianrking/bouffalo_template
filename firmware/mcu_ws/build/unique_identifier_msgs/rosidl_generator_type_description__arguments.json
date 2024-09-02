@@ -1,0 +1,7 @@
+{
+  "package_name": "unique_identifier_msgs",
+  "output_dir": "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/unique_identifier_msgs/rosidl_generator_type_description/unique_identifier_msgs",
+  "idl_tuples": [
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/unique_identifier_msgs/rosidl_adapter/unique_identifier_msgs:msg/UUID.idl"
+  ]
+}

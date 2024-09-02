@@ -1,0 +1,14 @@
+{
+  "package_name": "composition_interfaces",
+  "output_dir": "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/composition_interfaces/rosidl_generator_type_description/composition_interfaces",
+  "idl_tuples": [
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/composition_interfaces/rosidl_adapter/composition_interfaces:srv/LoadNode.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/composition_interfaces/rosidl_adapter/composition_interfaces:srv/ListNodes.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/composition_interfaces/rosidl_adapter/composition_interfaces:srv/UnloadNode.idl"
+  ],
+  "include_paths": [
+    "rcl_interfaces:/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rcl_interfaces",
+    "builtin_interfaces:/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/builtin_interfaces",
+    "service_msgs:/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/service_msgs"
+  ]
+}

@@ -1,0 +1,377 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The target system is: Generic -  - riscv
+      The host system is: Linux - 6.8.0-41-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-gcc 
+      Build flags: -std=gnu99;-march=rv32imac;-mabi=ilp32;-mcmodel=medlow;-ffunction-sections;-fdata-sections;-fstrict-volatile-bitfields;-fno-zero-initialized-in-bss;-Os;-ggdb;-Wall;-mno-save-restore;-fmessage-length=0;-fsigned-char;-ffunction-sections;-fdata-sections;-fno-common
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/stereo_msgs/CMakeFiles/3.30.2/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-g++ 
+      Build flags: -std=gnu++11;-march=rv32imac;-mabi=ilp32;-mcmodel=medlow;-ffunction-sections;-fdata-sections;-fstrict-volatile-bitfields;-fno-zero-initialized-in-bss;-Os;-ggdb;-Wall;-mno-save-restore;-fmessage-length=0;-fsigned-char;-ffunction-sections;-fdata-sections;-fno-common;-fno-rtti;-fno-exceptions
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/stereo_msgs/CMakeFiles/3.30.2/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/stereo_msgs/CMakeFiles/CMakeScratch/TryCompile-rUEIBg"
+      binary: "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/stereo_msgs/CMakeFiles/CMakeScratch/TryCompile-rUEIBg"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-std=gnu99 -march=rv32imac -mabi=ilp32 -mcmodel=medlow -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fno-zero-initialized-in-bss -Os -ggdb -Wall -mno-save-restore -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common"
+      CMAKE_EXE_LINKER_FLAGS: "-nostartfiles -Wl,--gc-sections -Wl,--check-sections -Wl,--unresolved-symbols=report-all -Wl,--warn-common"
+      CMAKE_POSITION_INDEPENDENT_CODE: "OFF"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/stereo_msgs/CMakeFiles/CMakeScratch/TryCompile-rUEIBg'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8ca1c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8ca1c.dir/build.make CMakeFiles/cmTC_8ca1c.dir/build
+        gmake[1]: Entering directory '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/stereo_msgs/CMakeFiles/CMakeScratch/TryCompile-rUEIBg'
+        Building C object CMakeFiles/cmTC_8ca1c.dir/CMakeCCompilerABI.c.obj
+        /home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-gcc -DARCH_RISCV -DBFLB_CRYPT_HARDWARE -DBFLB_PKA_HARDWARE -DCLOCK_MONOTONIC=0 -DRCUTILS_CUSTOM_TIME_IMPL -DRCUTILS_NO_64_ATOMIC -DUCLIENT_PLATFORM_RISCV -DUCLIENT_PROFILE_TCP=OFF -DUCLIENT_PROFILE_UDP=OFF -D_POSIX_TIMERS  -std=gnu99 -march=rv32imac -mabi=ilp32 -mcmodel=medlow -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fno-zero-initialized-in-bss -Os -ggdb -Wall -mno-save-restore -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common    -v -o CMakeFiles/cmTC_8ca1c.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.30/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-gcc
+        Target: riscv64-unknown-elf
+        Configured with: /mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/./source/riscv/riscv-gcc/configure --target=riscv64-unknown-elf --with-gmp=/mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/build-gcc-riscv64-unknown-elf/build-Xuantie-900-gcc-elf-newlib-x86_64-V2.6.1/lib-for-gcc-x86_64-linux --with-mpfr=/mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/build-gcc-riscv64-unknown-elf/build-Xuantie-900-gcc-elf-newlib-x86_64-V2.6.1/lib-for-gcc-x86_64-linux --with-mpc=/mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/build-gcc-riscv64-unknown-elf/build-Xuantie-900-gcc-elf-newlib-x86_64-V2.6.1/lib-for-gcc-x86_64-linux --with-libexpat-prefix=/mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/build-gcc-riscv64-unknown-elf/build-Xuantie-900-gcc-elf-newlib-x86_64-V2.6.1/lib-for-gcc-x86_64-linux --with-libmpfr-prefix=/mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/build-gcc-riscv64-unknown-elf/build-Xuantie-900-gcc-elf-newlib-x86_64-V2.6.1/lib-for-gcc-x86_64-linux --with-pkgversion='Xuantie-900 elf newlib gcc Toolchain V2.6.1 B-20220906' CXXFLAGS='-g -O2 -DTHEAD_VERSION_NUMBER=2.6.1 ' --enable-libgcctf --prefix=/mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/build-gcc-riscv64-unknown-elf/Xuantie-900-gcc-elf-newlib-x86_64-V2.6.1 --disable-shared --enable-threads=posix --enable-languages=c,c++ --with-system-zlib --enable-tls --with-newlib --with-sysroot=/mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/build-gcc-riscv64-unknown-elf/Xuantie-900-gcc-elf-newlib-x86_64-V2.6.1/riscv64-unknown-elf --with-native-system-header-dir=/include --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libgomp --disable-nls --disable-tm-clone-registry --src=/mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/./source/riscv/riscv-gcc --enable-multilib --with-abi=lp64d --with-arch=rv64gcxthead 'CFLAGS_FOR_TARGET=-Os   -mcmodel=medany' 'CXXFLAGS_FOR_TARGET=-Os   -mcmodel=medany'
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 10.2.0 (Xuantie-900 elf newlib gcc Toolchain V2.6.1 B-20220906) 
+        COLLECT_GCC_OPTIONS='-D' 'ARCH_RISCV' '-D' 'BFLB_CRYPT_HARDWARE' '-D' 'BFLB_PKA_HARDWARE' '-D' 'CLOCK_MONOTONIC=0' '-D' 'RCUTILS_CUSTOM_TIME_IMPL' '-D' 'RCUTILS_NO_64_ATOMIC' '-D' 'UCLIENT_PLATFORM_RISCV' '-D' 'UCLIENT_PROFILE_TCP=OFF' '-D' 'UCLIENT_PROFILE_UDP=OFF' '-D' '_POSIX_TIMERS' '-std=gnu99' '-march=rv32imac' '-mabi=ilp32' '-mcmodel=medlow' '-fstrict-volatile-bitfields' '-fno-zero-initialized-in-bss' '-Os' '-ggdb' '-Wall' '-mno-save-restore' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-fno-common' '-v' '-o' 'CMakeFiles/cmTC_8ca1c.dir/CMakeCCompilerABI.c.obj' '-c' '-march=rv32imac'
+         /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../libexec/gcc/riscv64-unknown-elf/10.2.0/cc1 -quiet -v -imultilib rv32imac/ilp32 -iprefix /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/ -isysroot /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../riscv64-unknown-elf -D ARCH_RISCV -D BFLB_CRYPT_HARDWARE -D BFLB_PKA_HARDWARE -D CLOCK_MONOTONIC=0 -D RCUTILS_CUSTOM_TIME_IMPL -D RCUTILS_NO_64_ATOMIC -D UCLIENT_PLATFORM_RISCV -D UCLIENT_PROFILE_TCP=OFF -D UCLIENT_PROFILE_UDP=OFF -D _POSIX_TIMERS /usr/share/cmake-3.30/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -march=rv32imac -mabi=ilp32 -mcmodel=medlow -mno-save-restore -march=rv32imac -auxbase-strip CMakeFiles/cmTC_8ca1c.dir/CMakeCCompilerABI.c.obj -ggdb -Os -Wall -std=gnu99 -version -fstrict-volatile-bitfields -fno-zero-initialized-in-bss -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -o /tmp/cczbI9da.s
+        GNU C99 (Xuantie-900 elf newlib gcc Toolchain V2.6.1 B-20220906) version 10.2.0 (riscv64-unknown-elf)
+        	compiled by GNU C version 6.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-elf/10.2.0/include"
+        ignoring nonexistent directory "/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../riscv64-unknown-elf/usr/local/include"
+        ignoring duplicate directory "/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed"
+        ignoring duplicate directory "/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/include"
+        ignoring duplicate directory "/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../riscv64-unknown-elf/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/include
+         /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed
+         /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/include
+        End of search list.
+        GNU C99 (Xuantie-900 elf newlib gcc Toolchain V2.6.1 B-20220906) version 10.2.0 (riscv64-unknown-elf)
+        	compiled by GNU C version 6.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: d4902f1ec543c8b1ce8bb3832d5a3c2b
+        COLLECT_GCC_OPTIONS='-D' 'ARCH_RISCV' '-D' 'BFLB_CRYPT_HARDWARE' '-D' 'BFLB_PKA_HARDWARE' '-D' 'CLOCK_MONOTONIC=0' '-D' 'RCUTILS_CUSTOM_TIME_IMPL' '-D' 'RCUTILS_NO_64_ATOMIC' '-D' 'UCLIENT_PLATFORM_RISCV' '-D' 'UCLIENT_PROFILE_TCP=OFF' '-D' 'UCLIENT_PROFILE_UDP=OFF' '-D' '_POSIX_TIMERS' '-std=gnu99' '-march=rv32imac' '-mabi=ilp32' '-mcmodel=medlow' '-fstrict-volatile-bitfields' '-fno-zero-initialized-in-bss' '-Os' '-ggdb' '-Wall' '-mno-save-restore' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-fno-common' '-v' '-o' 'CMakeFiles/cmTC_8ca1c.dir/CMakeCCompilerABI.c.obj' '-c' '-march=rv32imac'
+         /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/bin/as -v --traditional-format -march=rv32imac -march=rv32imac -mabi=ilp32 -o CMakeFiles/cmTC_8ca1c.dir/CMakeCCompilerABI.c.obj /tmp/cczbI9da.s
+        GNU assembler version 2.35 (riscv64-unknown-elf) using BFD version (GNU Binutils) 2.35
+        COMPILER_PATH=/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../libexec/gcc/riscv64-unknown-elf/10.2.0/:/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../libexec/gcc/:/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/bin/
+        LIBRARY_PATH=/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/rv32imac/ilp32/:/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/:/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../riscv64-unknown-elf/lib/rv32imac/ilp32/:/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/:/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/:/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/lib/:/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../riscv64-unknown-elf/lib/
+        COLLECT_GCC_OPTIONS='-D' 'ARCH_RISCV' '-D' 'BFLB_CRYPT_HARDWARE' '-D' 'BFLB_PKA_HARDWARE' '-D' 'CLOCK_MONOTONIC=0' '-D' 'RCUTILS_CUSTOM_TIME_IMPL' '-D' 'RCUTILS_NO_64_ATOMIC' '-D' 'UCLIENT_PLATFORM_RISCV' '-D' 'UCLIENT_PROFILE_TCP=OFF' '-D' 'UCLIENT_PROFILE_UDP=OFF' '-D' '_POSIX_TIMERS' '-std=gnu99' '-march=rv32imac' '-mabi=ilp32' '-mcmodel=medlow' '-fstrict-volatile-bitfields' '-fno-zero-initialized-in-bss' '-Os' '-ggdb' '-Wall' '-mno-save-restore' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-fno-common' '-v' '-o' 'CMakeFiles/cmTC_8ca1c.dir/CMakeCCompilerABI.c.obj' '-c' '-march=rv32imac'
+        Linking C static library libcmTC_8ca1c.a
+        /usr/bin/cmake -P CMakeFiles/cmTC_8ca1c.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ca1c.dir/link.txt --verbose=1
+        /home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-ar qc libcmTC_8ca1c.a CMakeFiles/cmTC_8ca1c.dir/CMakeCCompilerABI.c.obj
+        /home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-ranlib libcmTC_8ca1c.a
+        gmake[1]: Leaving directory '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/stereo_msgs/CMakeFiles/CMakeScratch/TryCompile-rUEIBg'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/include]
+          add: [/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed]
+          add: [/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/include]
+        end of search list found
+        collapse include dir [/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/include] ==> [/home/w0x7ce/toolchain_gcc_t-head_linux/lib/gcc/riscv64-unknown-elf/10.2.0/include]
+        collapse include dir [/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed] ==> [/home/w0x7ce/toolchain_gcc_t-head_linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed]
+        collapse include dir [/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/include] ==> [/home/w0x7ce/toolchain_gcc_t-head_linux/riscv64-unknown-elf/include]
+        implicit include dirs: [/home/w0x7ce/toolchain_gcc_t-head_linux/lib/gcc/riscv64-unknown-elf/10.2.0/include;/home/w0x7ce/toolchain_gcc_t-head_linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed;/home/w0x7ce/toolchain_gcc_t-head_linux/riscv64-unknown-elf/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/stereo_msgs/CMakeFiles/CMakeScratch/TryCompile-rUEIBg']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8ca1c/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_8ca1c.dir/build.make CMakeFiles/cmTC_8ca1c.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/stereo_msgs/CMakeFiles/CMakeScratch/TryCompile-rUEIBg']
+        ignore line: [Building C object CMakeFiles/cmTC_8ca1c.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [/home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-gcc -DARCH_RISCV -DBFLB_CRYPT_HARDWARE -DBFLB_PKA_HARDWARE -DCLOCK_MONOTONIC=0 -DRCUTILS_CUSTOM_TIME_IMPL -DRCUTILS_NO_64_ATOMIC -DUCLIENT_PLATFORM_RISCV -DUCLIENT_PROFILE_TCP=OFF -DUCLIENT_PROFILE_UDP=OFF -D_POSIX_TIMERS  -std=gnu99 -march=rv32imac -mabi=ilp32 -mcmodel=medlow -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fno-zero-initialized-in-bss -Os -ggdb -Wall -mno-save-restore -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common    -v -o CMakeFiles/cmTC_8ca1c.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.30/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-gcc]
+        ignore line: [Target: riscv64-unknown-elf]
+        ignore line: [Configured with: /mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/./source/riscv/riscv-gcc/configure --target=riscv64-unknown-elf --with-gmp=/mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/build-gcc-riscv64-unknown-elf/build-Xuantie-900-gcc-elf-newlib-x86_64-V2.6.1/lib-for-gcc-x86_64-linux --with-mpfr=/mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/build-gcc-riscv64-unknown-elf/build-Xuantie-900-gcc-elf-newlib-x86_64-V2.6.1/lib-for-gcc-x86_64-linux --with-mpc=/mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/build-gcc-riscv64-unknown-elf/build-Xuantie-900-gcc-elf-newlib-x86_64-V2.6.1/lib-for-gcc-x86_64-linux --with-libexpat-prefix=/mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/build-gcc-riscv64-unknown-elf/build-Xuantie-900-gcc-elf-newlib-x86_64-V2.6.1/lib-for-gcc-x86_64-linux --with-libmpfr-prefix=/mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/build-gcc-riscv64-unknown-elf/build-Xuantie-900-gcc-elf-newlib-x86_64-V2.6.1/lib-for-gcc-x86_64-linux --with-pkgversion='Xuantie-900 elf newlib gcc Toolchain V2.6.1 B-20220906' CXXFLAGS='-g -O2 -DTHEAD_VERSION_NUMBER=2.6.1 ' --enable-libgcctf --prefix=/mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/build-gcc-riscv64-unknown-elf/Xuantie-900-gcc-elf-newlib-x86_64-V2.6.1 --disable-shared --enable-threads=posix --enable-languages=c c++ --with-system-zlib --enable-tls --with-newlib --with-sysroot=/mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/build-gcc-riscv64-unknown-elf/Xuantie-900-gcc-elf-newlib-x86_64-V2.6.1/riscv64-unknown-elf --with-native-system-header-dir=/include --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libgomp --disable-nls --disable-tm-clone-registry --src=/mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/./source/riscv/riscv-gcc --enable-multilib --with-abi=lp64d --with-arch=rv64gcxthead 'CFLAGS_FOR_TARGET=-Os   -mcmodel=medany' 'CXXFLAGS_FOR_TARGET=-Os   -mcmodel=medany']
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 10.2.0 (Xuantie-900 elf newlib gcc Toolchain V2.6.1 B-20220906) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'ARCH_RISCV' '-D' 'BFLB_CRYPT_HARDWARE' '-D' 'BFLB_PKA_HARDWARE' '-D' 'CLOCK_MONOTONIC=0' '-D' 'RCUTILS_CUSTOM_TIME_IMPL' '-D' 'RCUTILS_NO_64_ATOMIC' '-D' 'UCLIENT_PLATFORM_RISCV' '-D' 'UCLIENT_PROFILE_TCP=OFF' '-D' 'UCLIENT_PROFILE_UDP=OFF' '-D' '_POSIX_TIMERS' '-std=gnu99' '-march=rv32imac' '-mabi=ilp32' '-mcmodel=medlow' '-fstrict-volatile-bitfields' '-fno-zero-initialized-in-bss' '-Os' '-ggdb' '-Wall' '-mno-save-restore' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-fno-common' '-v' '-o' 'CMakeFiles/cmTC_8ca1c.dir/CMakeCCompilerABI.c.obj' '-c' '-march=rv32imac']
+        ignore line: [ /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../libexec/gcc/riscv64-unknown-elf/10.2.0/cc1 -quiet -v -imultilib rv32imac/ilp32 -iprefix /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/ -isysroot /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../riscv64-unknown-elf -D ARCH_RISCV -D BFLB_CRYPT_HARDWARE -D BFLB_PKA_HARDWARE -D CLOCK_MONOTONIC=0 -D RCUTILS_CUSTOM_TIME_IMPL -D RCUTILS_NO_64_ATOMIC -D UCLIENT_PLATFORM_RISCV -D UCLIENT_PROFILE_TCP=OFF -D UCLIENT_PROFILE_UDP=OFF -D _POSIX_TIMERS /usr/share/cmake-3.30/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -march=rv32imac -mabi=ilp32 -mcmodel=medlow -mno-save-restore -march=rv32imac -auxbase-strip CMakeFiles/cmTC_8ca1c.dir/CMakeCCompilerABI.c.obj -ggdb -Os -Wall -std=gnu99 -version -fstrict-volatile-bitfields -fno-zero-initialized-in-bss -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -o /tmp/cczbI9da.s]
+        ignore line: [GNU C99 (Xuantie-900 elf newlib gcc Toolchain V2.6.1 B-20220906) version 10.2.0 (riscv64-unknown-elf)]
+        ignore line: [	compiled by GNU C version 6.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-elf/10.2.0/include"]
+        ignore line: [ignoring nonexistent directory "/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../riscv64-unknown-elf/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/include"]
+        ignore line: [ignoring duplicate directory "/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../riscv64-unknown-elf/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/include]
+        ignore line: [ /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed]
+        ignore line: [ /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C99 (Xuantie-900 elf newlib gcc Toolchain V2.6.1 B-20220906) version 10.2.0 (riscv64-unknown-elf)]
+        ignore line: [	compiled by GNU C version 6.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: d4902f1ec543c8b1ce8bb3832d5a3c2b]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'ARCH_RISCV' '-D' 'BFLB_CRYPT_HARDWARE' '-D' 'BFLB_PKA_HARDWARE' '-D' 'CLOCK_MONOTONIC=0' '-D' 'RCUTILS_CUSTOM_TIME_IMPL' '-D' 'RCUTILS_NO_64_ATOMIC' '-D' 'UCLIENT_PLATFORM_RISCV' '-D' 'UCLIENT_PROFILE_TCP=OFF' '-D' 'UCLIENT_PROFILE_UDP=OFF' '-D' '_POSIX_TIMERS' '-std=gnu99' '-march=rv32imac' '-mabi=ilp32' '-mcmodel=medlow' '-fstrict-volatile-bitfields' '-fno-zero-initialized-in-bss' '-Os' '-ggdb' '-Wall' '-mno-save-restore' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-fno-common' '-v' '-o' 'CMakeFiles/cmTC_8ca1c.dir/CMakeCCompilerABI.c.obj' '-c' '-march=rv32imac']
+        ignore line: [ /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/bin/as -v --traditional-format -march=rv32imac -march=rv32imac -mabi=ilp32 -o CMakeFiles/cmTC_8ca1c.dir/CMakeCCompilerABI.c.obj /tmp/cczbI9da.s]
+        ignore line: [GNU assembler version 2.35 (riscv64-unknown-elf) using BFD version (GNU Binutils) 2.35]
+        ignore line: [COMPILER_PATH=/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../libexec/gcc/riscv64-unknown-elf/10.2.0/:/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../libexec/gcc/:/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/bin/]
+        ignore line: [LIBRARY_PATH=/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/rv32imac/ilp32/:/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/:/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../riscv64-unknown-elf/lib/rv32imac/ilp32/:/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/:/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/:/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/lib/:/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../riscv64-unknown-elf/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'ARCH_RISCV' '-D' 'BFLB_CRYPT_HARDWARE' '-D' 'BFLB_PKA_HARDWARE' '-D' 'CLOCK_MONOTONIC=0' '-D' 'RCUTILS_CUSTOM_TIME_IMPL' '-D' 'RCUTILS_NO_64_ATOMIC' '-D' 'UCLIENT_PLATFORM_RISCV' '-D' 'UCLIENT_PROFILE_TCP=OFF' '-D' 'UCLIENT_PROFILE_UDP=OFF' '-D' '_POSIX_TIMERS' '-std=gnu99' '-march=rv32imac' '-mabi=ilp32' '-mcmodel=medlow' '-fstrict-volatile-bitfields' '-fno-zero-initialized-in-bss' '-Os' '-ggdb' '-Wall' '-mno-save-restore' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-fno-common' '-v' '-o' 'CMakeFiles/cmTC_8ca1c.dir/CMakeCCompilerABI.c.obj' '-c' '-march=rv32imac']
+        ignore line: [Linking C static library libcmTC_8ca1c.a]
+        ignore line: [/usr/bin/cmake -P CMakeFiles/cmTC_8ca1c.dir/cmake_clean_target.cmake]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ca1c.dir/link.txt --verbose=1]
+        ignore line: [/home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-ar qc libcmTC_8ca1c.a CMakeFiles/cmTC_8ca1c.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [/home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-ranlib libcmTC_8ca1c.a]
+        ignore line: [gmake[1]: Leaving directory '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/stereo_msgs/CMakeFiles/CMakeScratch/TryCompile-rUEIBg']
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/stereo_msgs/CMakeFiles/CMakeScratch/TryCompile-bcSu19"
+      binary: "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/stereo_msgs/CMakeFiles/CMakeScratch/TryCompile-bcSu19"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-std=gnu++11 -march=rv32imac -mabi=ilp32 -mcmodel=medlow -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fno-zero-initialized-in-bss -Os -ggdb -Wall -mno-save-restore -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -fno-rtti -fno-exceptions"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "-nostartfiles -Wl,--gc-sections -Wl,--check-sections -Wl,--unresolved-symbols=report-all -Wl,--warn-common"
+      CMAKE_POSITION_INDEPENDENT_CODE: "OFF"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/stereo_msgs/CMakeFiles/CMakeScratch/TryCompile-bcSu19'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ba40a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ba40a.dir/build.make CMakeFiles/cmTC_ba40a.dir/build
+        gmake[1]: Entering directory '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/stereo_msgs/CMakeFiles/CMakeScratch/TryCompile-bcSu19'
+        Building CXX object CMakeFiles/cmTC_ba40a.dir/CMakeCXXCompilerABI.cpp.obj
+        /home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-g++ -DARCH_RISCV -DBFLB_CRYPT_HARDWARE -DBFLB_PKA_HARDWARE -DCLOCK_MONOTONIC=0 -DRCUTILS_CUSTOM_TIME_IMPL -DRCUTILS_NO_64_ATOMIC -DUCLIENT_PLATFORM_RISCV -DUCLIENT_PROFILE_TCP=OFF -DUCLIENT_PROFILE_UDP=OFF -D_POSIX_TIMERS  -std=gnu++11 -march=rv32imac -mabi=ilp32 -mcmodel=medlow -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fno-zero-initialized-in-bss -Os -ggdb -Wall -mno-save-restore -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -fno-rtti -fno-exceptions    -v -o CMakeFiles/cmTC_ba40a.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-g++
+        Target: riscv64-unknown-elf
+        Configured with: /mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/./source/riscv/riscv-gcc/configure --target=riscv64-unknown-elf --with-gmp=/mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/build-gcc-riscv64-unknown-elf/build-Xuantie-900-gcc-elf-newlib-x86_64-V2.6.1/lib-for-gcc-x86_64-linux --with-mpfr=/mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/build-gcc-riscv64-unknown-elf/build-Xuantie-900-gcc-elf-newlib-x86_64-V2.6.1/lib-for-gcc-x86_64-linux --with-mpc=/mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/build-gcc-riscv64-unknown-elf/build-Xuantie-900-gcc-elf-newlib-x86_64-V2.6.1/lib-for-gcc-x86_64-linux --with-libexpat-prefix=/mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/build-gcc-riscv64-unknown-elf/build-Xuantie-900-gcc-elf-newlib-x86_64-V2.6.1/lib-for-gcc-x86_64-linux --with-libmpfr-prefix=/mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/build-gcc-riscv64-unknown-elf/build-Xuantie-900-gcc-elf-newlib-x86_64-V2.6.1/lib-for-gcc-x86_64-linux --with-pkgversion='Xuantie-900 elf newlib gcc Toolchain V2.6.1 B-20220906' CXXFLAGS='-g -O2 -DTHEAD_VERSION_NUMBER=2.6.1 ' --enable-libgcctf --prefix=/mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/build-gcc-riscv64-unknown-elf/Xuantie-900-gcc-elf-newlib-x86_64-V2.6.1 --disable-shared --enable-threads=posix --enable-languages=c,c++ --with-system-zlib --enable-tls --with-newlib --with-sysroot=/mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/build-gcc-riscv64-unknown-elf/Xuantie-900-gcc-elf-newlib-x86_64-V2.6.1/riscv64-unknown-elf --with-native-system-header-dir=/include --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libgomp --disable-nls --disable-tm-clone-registry --src=/mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/./source/riscv/riscv-gcc --enable-multilib --with-abi=lp64d --with-arch=rv64gcxthead 'CFLAGS_FOR_TARGET=-Os   -mcmodel=medany' 'CXXFLAGS_FOR_TARGET=-Os   -mcmodel=medany'
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 10.2.0 (Xuantie-900 elf newlib gcc Toolchain V2.6.1 B-20220906) 
+        COLLECT_GCC_OPTIONS='-D' 'ARCH_RISCV' '-D' 'BFLB_CRYPT_HARDWARE' '-D' 'BFLB_PKA_HARDWARE' '-D' 'CLOCK_MONOTONIC=0' '-D' 'RCUTILS_CUSTOM_TIME_IMPL' '-D' 'RCUTILS_NO_64_ATOMIC' '-D' 'UCLIENT_PLATFORM_RISCV' '-D' 'UCLIENT_PROFILE_TCP=OFF' '-D' 'UCLIENT_PROFILE_UDP=OFF' '-D' '_POSIX_TIMERS' '-std=gnu++11' '-march=rv32imac' '-mabi=ilp32' '-mcmodel=medlow' '-fstrict-volatile-bitfields' '-fno-zero-initialized-in-bss' '-Os' '-ggdb' '-Wall' '-mno-save-restore' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-fno-common' '-fno-rtti' '-fno-exceptions' '-v' '-o' 'CMakeFiles/cmTC_ba40a.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-march=rv32imac'
+         /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../libexec/gcc/riscv64-unknown-elf/10.2.0/cc1plus -quiet -v -imultilib rv32imac/ilp32 -iprefix /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/ -isysroot /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../riscv64-unknown-elf -D ARCH_RISCV -D BFLB_CRYPT_HARDWARE -D BFLB_PKA_HARDWARE -D CLOCK_MONOTONIC=0 -D RCUTILS_CUSTOM_TIME_IMPL -D RCUTILS_NO_64_ATOMIC -D UCLIENT_PLATFORM_RISCV -D UCLIENT_PROFILE_TCP=OFF -D UCLIENT_PROFILE_UDP=OFF -D _POSIX_TIMERS /usr/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -march=rv32imac -mabi=ilp32 -mcmodel=medlow -mno-save-restore -march=rv32imac -auxbase-strip CMakeFiles/cmTC_ba40a.dir/CMakeCXXCompilerABI.cpp.obj -ggdb -Os -Wall -std=gnu++11 -version -fstrict-volatile-bitfields -fno-zero-initialized-in-bss -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -fno-rtti -fno-exceptions -o /tmp/ccnp5Qsj.s
+        GNU C++11 (Xuantie-900 elf newlib gcc Toolchain V2.6.1 B-20220906) version 10.2.0 (riscv64-unknown-elf)
+        	compiled by GNU C version 6.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/include/c++/10.2.0"
+        ignoring duplicate directory "/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/include/c++/10.2.0/riscv64-unknown-elf/rv32imac/ilp32"
+        ignoring duplicate directory "/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/include/c++/10.2.0/backward"
+        ignoring duplicate directory "/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-elf/10.2.0/include"
+        ignoring nonexistent directory "/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../riscv64-unknown-elf/usr/local/include"
+        ignoring duplicate directory "/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed"
+        ignoring duplicate directory "/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/include"
+        ignoring duplicate directory "/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../riscv64-unknown-elf/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/include/c++/10.2.0
+         /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/include/c++/10.2.0/riscv64-unknown-elf/rv32imac/ilp32
+         /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/include/c++/10.2.0/backward
+         /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/include
+         /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed
+         /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/include
+        End of search list.
+        GNU C++11 (Xuantie-900 elf newlib gcc Toolchain V2.6.1 B-20220906) version 10.2.0 (riscv64-unknown-elf)
+        	compiled by GNU C version 6.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: f924dbd000ee9bf599eef29c1965e72d
+        COLLECT_GCC_OPTIONS='-D' 'ARCH_RISCV' '-D' 'BFLB_CRYPT_HARDWARE' '-D' 'BFLB_PKA_HARDWARE' '-D' 'CLOCK_MONOTONIC=0' '-D' 'RCUTILS_CUSTOM_TIME_IMPL' '-D' 'RCUTILS_NO_64_ATOMIC' '-D' 'UCLIENT_PLATFORM_RISCV' '-D' 'UCLIENT_PROFILE_TCP=OFF' '-D' 'UCLIENT_PROFILE_UDP=OFF' '-D' '_POSIX_TIMERS' '-std=gnu++11' '-march=rv32imac' '-mabi=ilp32' '-mcmodel=medlow' '-fstrict-volatile-bitfields' '-fno-zero-initialized-in-bss' '-Os' '-ggdb' '-Wall' '-mno-save-restore' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-fno-common' '-fno-rtti' '-fno-exceptions' '-v' '-o' 'CMakeFiles/cmTC_ba40a.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-march=rv32imac'
+         /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/bin/as -v --traditional-format -march=rv32imac -march=rv32imac -mabi=ilp32 -o CMakeFiles/cmTC_ba40a.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccnp5Qsj.s
+        GNU assembler version 2.35 (riscv64-unknown-elf) using BFD version (GNU Binutils) 2.35
+        COMPILER_PATH=/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../libexec/gcc/riscv64-unknown-elf/10.2.0/:/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../libexec/gcc/:/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/bin/
+        LIBRARY_PATH=/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/rv32imac/ilp32/:/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/:/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../riscv64-unknown-elf/lib/rv32imac/ilp32/:/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/:/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/:/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/lib/:/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../riscv64-unknown-elf/lib/
+        COLLECT_GCC_OPTIONS='-D' 'ARCH_RISCV' '-D' 'BFLB_CRYPT_HARDWARE' '-D' 'BFLB_PKA_HARDWARE' '-D' 'CLOCK_MONOTONIC=0' '-D' 'RCUTILS_CUSTOM_TIME_IMPL' '-D' 'RCUTILS_NO_64_ATOMIC' '-D' 'UCLIENT_PLATFORM_RISCV' '-D' 'UCLIENT_PROFILE_TCP=OFF' '-D' 'UCLIENT_PROFILE_UDP=OFF' '-D' '_POSIX_TIMERS' '-std=gnu++11' '-march=rv32imac' '-mabi=ilp32' '-mcmodel=medlow' '-fstrict-volatile-bitfields' '-fno-zero-initialized-in-bss' '-Os' '-ggdb' '-Wall' '-mno-save-restore' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-fno-common' '-fno-rtti' '-fno-exceptions' '-v' '-o' 'CMakeFiles/cmTC_ba40a.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-march=rv32imac'
+        Linking CXX static library libcmTC_ba40a.a
+        /usr/bin/cmake -P CMakeFiles/cmTC_ba40a.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba40a.dir/link.txt --verbose=1
+        /home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-ar qc libcmTC_ba40a.a CMakeFiles/cmTC_ba40a.dir/CMakeCXXCompilerABI.cpp.obj
+        /home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-ranlib libcmTC_ba40a.a
+        gmake[1]: Leaving directory '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/stereo_msgs/CMakeFiles/CMakeScratch/TryCompile-bcSu19'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/include/c++/10.2.0]
+          add: [/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/include/c++/10.2.0/riscv64-unknown-elf/rv32imac/ilp32]
+          add: [/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/include/c++/10.2.0/backward]
+          add: [/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/include]
+          add: [/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed]
+          add: [/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/include]
+        end of search list found
+        collapse include dir [/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/include/c++/10.2.0] ==> [/home/w0x7ce/toolchain_gcc_t-head_linux/riscv64-unknown-elf/include/c++/10.2.0]
+        collapse include dir [/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/include/c++/10.2.0/riscv64-unknown-elf/rv32imac/ilp32] ==> [/home/w0x7ce/toolchain_gcc_t-head_linux/riscv64-unknown-elf/include/c++/10.2.0/riscv64-unknown-elf/rv32imac/ilp32]
+        collapse include dir [/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/include/c++/10.2.0/backward] ==> [/home/w0x7ce/toolchain_gcc_t-head_linux/riscv64-unknown-elf/include/c++/10.2.0/backward]
+        collapse include dir [/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/include] ==> [/home/w0x7ce/toolchain_gcc_t-head_linux/lib/gcc/riscv64-unknown-elf/10.2.0/include]
+        collapse include dir [/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed] ==> [/home/w0x7ce/toolchain_gcc_t-head_linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed]
+        collapse include dir [/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/include] ==> [/home/w0x7ce/toolchain_gcc_t-head_linux/riscv64-unknown-elf/include]
+        implicit include dirs: [/home/w0x7ce/toolchain_gcc_t-head_linux/riscv64-unknown-elf/include/c++/10.2.0;/home/w0x7ce/toolchain_gcc_t-head_linux/riscv64-unknown-elf/include/c++/10.2.0/riscv64-unknown-elf/rv32imac/ilp32;/home/w0x7ce/toolchain_gcc_t-head_linux/riscv64-unknown-elf/include/c++/10.2.0/backward;/home/w0x7ce/toolchain_gcc_t-head_linux/lib/gcc/riscv64-unknown-elf/10.2.0/include;/home/w0x7ce/toolchain_gcc_t-head_linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed;/home/w0x7ce/toolchain_gcc_t-head_linux/riscv64-unknown-elf/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/stereo_msgs/CMakeFiles/CMakeScratch/TryCompile-bcSu19']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ba40a/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_ba40a.dir/build.make CMakeFiles/cmTC_ba40a.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/stereo_msgs/CMakeFiles/CMakeScratch/TryCompile-bcSu19']
+        ignore line: [Building CXX object CMakeFiles/cmTC_ba40a.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [/home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-g++ -DARCH_RISCV -DBFLB_CRYPT_HARDWARE -DBFLB_PKA_HARDWARE -DCLOCK_MONOTONIC=0 -DRCUTILS_CUSTOM_TIME_IMPL -DRCUTILS_NO_64_ATOMIC -DUCLIENT_PLATFORM_RISCV -DUCLIENT_PROFILE_TCP=OFF -DUCLIENT_PROFILE_UDP=OFF -D_POSIX_TIMERS  -std=gnu++11 -march=rv32imac -mabi=ilp32 -mcmodel=medlow -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fno-zero-initialized-in-bss -Os -ggdb -Wall -mno-save-restore -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -fno-rtti -fno-exceptions    -v -o CMakeFiles/cmTC_ba40a.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-g++]
+        ignore line: [Target: riscv64-unknown-elf]
+        ignore line: [Configured with: /mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/./source/riscv/riscv-gcc/configure --target=riscv64-unknown-elf --with-gmp=/mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/build-gcc-riscv64-unknown-elf/build-Xuantie-900-gcc-elf-newlib-x86_64-V2.6.1/lib-for-gcc-x86_64-linux --with-mpfr=/mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/build-gcc-riscv64-unknown-elf/build-Xuantie-900-gcc-elf-newlib-x86_64-V2.6.1/lib-for-gcc-x86_64-linux --with-mpc=/mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/build-gcc-riscv64-unknown-elf/build-Xuantie-900-gcc-elf-newlib-x86_64-V2.6.1/lib-for-gcc-x86_64-linux --with-libexpat-prefix=/mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/build-gcc-riscv64-unknown-elf/build-Xuantie-900-gcc-elf-newlib-x86_64-V2.6.1/lib-for-gcc-x86_64-linux --with-libmpfr-prefix=/mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/build-gcc-riscv64-unknown-elf/build-Xuantie-900-gcc-elf-newlib-x86_64-V2.6.1/lib-for-gcc-x86_64-linux --with-pkgversion='Xuantie-900 elf newlib gcc Toolchain V2.6.1 B-20220906' CXXFLAGS='-g -O2 -DTHEAD_VERSION_NUMBER=2.6.1 ' --enable-libgcctf --prefix=/mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/build-gcc-riscv64-unknown-elf/Xuantie-900-gcc-elf-newlib-x86_64-V2.6.1 --disable-shared --enable-threads=posix --enable-languages=c c++ --with-system-zlib --enable-tls --with-newlib --with-sysroot=/mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/build-gcc-riscv64-unknown-elf/Xuantie-900-gcc-elf-newlib-x86_64-V2.6.1/riscv64-unknown-elf --with-native-system-header-dir=/include --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libgomp --disable-nls --disable-tm-clone-registry --src=/mnt/ssd/jenkins_iotsw/slave/workspace/Toolchain/build-gnu-riscv/./source/riscv/riscv-gcc --enable-multilib --with-abi=lp64d --with-arch=rv64gcxthead 'CFLAGS_FOR_TARGET=-Os   -mcmodel=medany' 'CXXFLAGS_FOR_TARGET=-Os   -mcmodel=medany']
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 10.2.0 (Xuantie-900 elf newlib gcc Toolchain V2.6.1 B-20220906) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'ARCH_RISCV' '-D' 'BFLB_CRYPT_HARDWARE' '-D' 'BFLB_PKA_HARDWARE' '-D' 'CLOCK_MONOTONIC=0' '-D' 'RCUTILS_CUSTOM_TIME_IMPL' '-D' 'RCUTILS_NO_64_ATOMIC' '-D' 'UCLIENT_PLATFORM_RISCV' '-D' 'UCLIENT_PROFILE_TCP=OFF' '-D' 'UCLIENT_PROFILE_UDP=OFF' '-D' '_POSIX_TIMERS' '-std=gnu++11' '-march=rv32imac' '-mabi=ilp32' '-mcmodel=medlow' '-fstrict-volatile-bitfields' '-fno-zero-initialized-in-bss' '-Os' '-ggdb' '-Wall' '-mno-save-restore' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-fno-common' '-fno-rtti' '-fno-exceptions' '-v' '-o' 'CMakeFiles/cmTC_ba40a.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-march=rv32imac']
+        ignore line: [ /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../libexec/gcc/riscv64-unknown-elf/10.2.0/cc1plus -quiet -v -imultilib rv32imac/ilp32 -iprefix /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/ -isysroot /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../riscv64-unknown-elf -D ARCH_RISCV -D BFLB_CRYPT_HARDWARE -D BFLB_PKA_HARDWARE -D CLOCK_MONOTONIC=0 -D RCUTILS_CUSTOM_TIME_IMPL -D RCUTILS_NO_64_ATOMIC -D UCLIENT_PLATFORM_RISCV -D UCLIENT_PROFILE_TCP=OFF -D UCLIENT_PROFILE_UDP=OFF -D _POSIX_TIMERS /usr/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -march=rv32imac -mabi=ilp32 -mcmodel=medlow -mno-save-restore -march=rv32imac -auxbase-strip CMakeFiles/cmTC_ba40a.dir/CMakeCXXCompilerABI.cpp.obj -ggdb -Os -Wall -std=gnu++11 -version -fstrict-volatile-bitfields -fno-zero-initialized-in-bss -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -fno-rtti -fno-exceptions -o /tmp/ccnp5Qsj.s]
+        ignore line: [GNU C++11 (Xuantie-900 elf newlib gcc Toolchain V2.6.1 B-20220906) version 10.2.0 (riscv64-unknown-elf)]
+        ignore line: [	compiled by GNU C version 6.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/include/c++/10.2.0"]
+        ignore line: [ignoring duplicate directory "/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/include/c++/10.2.0/riscv64-unknown-elf/rv32imac/ilp32"]
+        ignore line: [ignoring duplicate directory "/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/include/c++/10.2.0/backward"]
+        ignore line: [ignoring duplicate directory "/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-elf/10.2.0/include"]
+        ignore line: [ignoring nonexistent directory "/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../riscv64-unknown-elf/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/include"]
+        ignore line: [ignoring duplicate directory "/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../riscv64-unknown-elf/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/include/c++/10.2.0]
+        ignore line: [ /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/include/c++/10.2.0/riscv64-unknown-elf/rv32imac/ilp32]
+        ignore line: [ /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/include/c++/10.2.0/backward]
+        ignore line: [ /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/include]
+        ignore line: [ /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed]
+        ignore line: [ /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++11 (Xuantie-900 elf newlib gcc Toolchain V2.6.1 B-20220906) version 10.2.0 (riscv64-unknown-elf)]
+        ignore line: [	compiled by GNU C version 6.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: f924dbd000ee9bf599eef29c1965e72d]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'ARCH_RISCV' '-D' 'BFLB_CRYPT_HARDWARE' '-D' 'BFLB_PKA_HARDWARE' '-D' 'CLOCK_MONOTONIC=0' '-D' 'RCUTILS_CUSTOM_TIME_IMPL' '-D' 'RCUTILS_NO_64_ATOMIC' '-D' 'UCLIENT_PLATFORM_RISCV' '-D' 'UCLIENT_PROFILE_TCP=OFF' '-D' 'UCLIENT_PROFILE_UDP=OFF' '-D' '_POSIX_TIMERS' '-std=gnu++11' '-march=rv32imac' '-mabi=ilp32' '-mcmodel=medlow' '-fstrict-volatile-bitfields' '-fno-zero-initialized-in-bss' '-Os' '-ggdb' '-Wall' '-mno-save-restore' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-fno-common' '-fno-rtti' '-fno-exceptions' '-v' '-o' 'CMakeFiles/cmTC_ba40a.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-march=rv32imac']
+        ignore line: [ /home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/bin/as -v --traditional-format -march=rv32imac -march=rv32imac -mabi=ilp32 -o CMakeFiles/cmTC_ba40a.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccnp5Qsj.s]
+        ignore line: [GNU assembler version 2.35 (riscv64-unknown-elf) using BFD version (GNU Binutils) 2.35]
+        ignore line: [COMPILER_PATH=/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../libexec/gcc/riscv64-unknown-elf/10.2.0/:/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../libexec/gcc/:/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/bin/]
+        ignore line: [LIBRARY_PATH=/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/rv32imac/ilp32/:/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/:/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../riscv64-unknown-elf/lib/rv32imac/ilp32/:/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/:/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/:/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../lib/gcc/riscv64-unknown-elf/10.2.0/../../../../riscv64-unknown-elf/lib/:/home/w0x7ce/toolchain_gcc_t-head_linux/bin/../riscv64-unknown-elf/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'ARCH_RISCV' '-D' 'BFLB_CRYPT_HARDWARE' '-D' 'BFLB_PKA_HARDWARE' '-D' 'CLOCK_MONOTONIC=0' '-D' 'RCUTILS_CUSTOM_TIME_IMPL' '-D' 'RCUTILS_NO_64_ATOMIC' '-D' 'UCLIENT_PLATFORM_RISCV' '-D' 'UCLIENT_PROFILE_TCP=OFF' '-D' 'UCLIENT_PROFILE_UDP=OFF' '-D' '_POSIX_TIMERS' '-std=gnu++11' '-march=rv32imac' '-mabi=ilp32' '-mcmodel=medlow' '-fstrict-volatile-bitfields' '-fno-zero-initialized-in-bss' '-Os' '-ggdb' '-Wall' '-mno-save-restore' '-fmessage-length=0' '-fsigned-char' '-ffunction-sections' '-fdata-sections' '-fno-common' '-fno-rtti' '-fno-exceptions' '-v' '-o' 'CMakeFiles/cmTC_ba40a.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-march=rv32imac']
+        ignore line: [Linking CXX static library libcmTC_ba40a.a]
+        ignore line: [/usr/bin/cmake -P CMakeFiles/cmTC_ba40a.dir/cmake_clean_target.cmake]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba40a.dir/link.txt --verbose=1]
+        ignore line: [/home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-ar qc libcmTC_ba40a.a CMakeFiles/cmTC_ba40a.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [/home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-ranlib libcmTC_ba40a.a]
+        ignore line: [gmake[1]: Leaving directory '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/stereo_msgs/CMakeFiles/CMakeScratch/TryCompile-bcSu19']
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+...

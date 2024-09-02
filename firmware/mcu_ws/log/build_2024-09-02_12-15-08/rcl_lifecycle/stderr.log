@@ -1,0 +1,26 @@
+[33mCMake Warning at /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)
+  /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)
+  /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/service_msgs/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/service_msgs/cmake/service_msgsConfig.cmake:41 (include)
+  /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/lifecycle_msgs/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/lifecycle_msgs/cmake/lifecycle_msgsConfig.cmake:41 (include)
+  CMakeLists.txt:8 (find_package)
+
+[0m
+[01m[K/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/uros/rcl/rcl_lifecycle/src/rcl_lifecycle.c:[m[K In function '[01m[Krcl_lifecycle_state_machine_fini[m[K':
+[01m[K/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/uros/rcl/rcl_lifecycle/src/rcl_lifecycle.c:265:24:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Kerror_string[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  265 |     rcl_error_string_t [01;35m[Kerror_string[m[K = rcl_get_error_string();
+      |                        [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/uros/rcl/rcl_lifecycle/src/rcl_lifecycle.c:275:24:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Kerror_string[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  275 |     rcl_error_string_t [01;35m[Kerror_string[m[K = rcl_get_error_string();
+      |                        [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/uros/rcl/rcl_lifecycle/src/rcl_lifecycle.c:[m[K In function '[01m[K_trigger_transition[m[K':
+[01m[K/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/uros/rcl/rcl_lifecycle/src/rcl_lifecycle.c:366:26:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Kerror_string[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  366 |       rcl_error_string_t [01;35m[Kerror_string[m[K = rcl_get_error_string();
+      |                          [01;35m[K^~~~~~~~~~~~[m[K

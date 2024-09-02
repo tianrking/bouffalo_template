@@ -1,0 +1,15 @@
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/std_srvs/CMakeFiles/uninstall.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/std_srvs/CMakeFiles/std_srvs_uninstall.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/std_srvs/CMakeFiles/std_srvs.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/std_srvs/CMakeFiles/std_srvs__rosidl_generator_type_description.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/std_srvs/CMakeFiles/std_srvs__rosidl_generator_c.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/std_srvs/CMakeFiles/std_srvs__rosidl_typesupport_introspection_c.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/std_srvs/CMakeFiles/std_srvs__rosidl_typesupport_microxrcedds_c.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/std_srvs/CMakeFiles/std_srvs__rosidl_typesupport_c.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/std_srvs/CMakeFiles/test.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/std_srvs/CMakeFiles/edit_cache.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/std_srvs/CMakeFiles/rebuild_cache.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/std_srvs/CMakeFiles/list_install_components.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/std_srvs/CMakeFiles/install.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/std_srvs/CMakeFiles/install/local.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/std_srvs/CMakeFiles/install/strip.dir

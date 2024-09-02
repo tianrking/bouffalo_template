@@ -1,0 +1,2 @@
+/home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-ar qc librcl_logging_interface.a CMakeFiles/rcl_logging_interface.dir/src/logging_dir.c.obj
+/home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-ranlib librcl_logging_interface.a

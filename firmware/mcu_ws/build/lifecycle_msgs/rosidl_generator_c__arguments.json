@@ -1,0 +1,72 @@
+{
+  "package_name": "lifecycle_msgs",
+  "output_dir": "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/lifecycle_msgs/rosidl_generator_c/lifecycle_msgs",
+  "template_dir": "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_generator_c/cmake/../resource",
+  "idl_tuples": [
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/lifecycle_msgs/rosidl_adapter/lifecycle_msgs:msg/State.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/lifecycle_msgs/rosidl_adapter/lifecycle_msgs:msg/Transition.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/lifecycle_msgs/rosidl_adapter/lifecycle_msgs:msg/TransitionDescription.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/lifecycle_msgs/rosidl_adapter/lifecycle_msgs:msg/TransitionEvent.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/lifecycle_msgs/rosidl_adapter/lifecycle_msgs:srv/ChangeState.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/lifecycle_msgs/rosidl_adapter/lifecycle_msgs:srv/GetAvailableStates.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/lifecycle_msgs/rosidl_adapter/lifecycle_msgs:srv/GetAvailableTransitions.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/lifecycle_msgs/rosidl_adapter/lifecycle_msgs:srv/GetState.idl"
+  ],
+  "ros_interface_files": [
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rcl_interfaces/lifecycle_msgs/msg/State.msg",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rcl_interfaces/lifecycle_msgs/msg/Transition.msg",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rcl_interfaces/lifecycle_msgs/msg/TransitionDescription.msg",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rcl_interfaces/lifecycle_msgs/msg/TransitionEvent.msg",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rcl_interfaces/lifecycle_msgs/srv/ChangeState.srv",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rcl_interfaces/lifecycle_msgs/srv/GetAvailableStates.srv",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rcl_interfaces/lifecycle_msgs/srv/GetAvailableTransitions.srv",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rcl_interfaces/lifecycle_msgs/srv/GetState.srv"
+  ],
+  "ros_interface_dependencies": [
+    "service_msgs:/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/service_msgs/msg/ServiceEventInfo.idl",
+    "builtin_interfaces:/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/builtin_interfaces/msg/Duration.idl",
+    "builtin_interfaces:/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/builtin_interfaces/msg/Time.idl"
+  ],
+  "target_dependencies": [
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_generator_c/cmake/../../../lib/python3.12/site-packages/rosidl_generator_c/__init__.py",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_generator_c/cmake/../resource/action__type_support.h.em",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_generator_c/cmake/../resource/action__type_support.c.em",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_generator_c/cmake/../resource/empty__description.c.em",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_generator_c/cmake/../resource/full__description.c.em",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_generator_c/cmake/../resource/idl.h.em",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_generator_c/cmake/../resource/idl__description.c.em",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_generator_c/cmake/../resource/idl__functions.c.em",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_generator_c/cmake/../resource/idl__functions.h.em",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_generator_c/cmake/../resource/idl__struct.h.em",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_generator_c/cmake/../resource/idl__type_support.c.em",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_generator_c/cmake/../resource/idl__type_support.h.em",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_generator_c/cmake/../resource/msg__functions.c.em",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_generator_c/cmake/../resource/msg__functions.h.em",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_generator_c/cmake/../resource/srv__type_support.c.em",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/lifecycle_msgs/rosidl_adapter/lifecycle_msgs/msg/State.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/lifecycle_msgs/rosidl_adapter/lifecycle_msgs/msg/Transition.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/lifecycle_msgs/rosidl_adapter/lifecycle_msgs/msg/TransitionDescription.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/lifecycle_msgs/rosidl_adapter/lifecycle_msgs/msg/TransitionEvent.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/lifecycle_msgs/rosidl_adapter/lifecycle_msgs/srv/ChangeState.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/lifecycle_msgs/rosidl_adapter/lifecycle_msgs/srv/GetAvailableStates.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/lifecycle_msgs/rosidl_adapter/lifecycle_msgs/srv/GetAvailableTransitions.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/lifecycle_msgs/rosidl_adapter/lifecycle_msgs/srv/GetState.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/service_msgs/msg/ServiceEventInfo.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/builtin_interfaces/msg/Duration.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/builtin_interfaces/msg/Time.idl"
+  ],
+  "type_description_tuples": [
+    "msg/State.idl:/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/lifecycle_msgs/rosidl_generator_type_description/lifecycle_msgs/msg/State.json",
+    "msg/Transition.idl:/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/lifecycle_msgs/rosidl_generator_type_description/lifecycle_msgs/msg/Transition.json",
+    "msg/TransitionDescription.idl:/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/lifecycle_msgs/rosidl_generator_type_description/lifecycle_msgs/msg/TransitionDescription.json",
+    "msg/TransitionEvent.idl:/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/lifecycle_msgs/rosidl_generator_type_description/lifecycle_msgs/msg/TransitionEvent.json",
+    "srv/ChangeState.idl:/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/lifecycle_msgs/rosidl_generator_type_description/lifecycle_msgs/srv/ChangeState.json",
+    "srv/GetAvailableStates.idl:/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/lifecycle_msgs/rosidl_generator_type_description/lifecycle_msgs/srv/GetAvailableStates.json",
+    "srv/GetAvailableTransitions.idl:/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/lifecycle_msgs/rosidl_generator_type_description/lifecycle_msgs/srv/GetAvailableTransitions.json",
+    "srv/GetState.idl:/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/lifecycle_msgs/rosidl_generator_type_description/lifecycle_msgs/srv/GetState.json"
+  ]
+}

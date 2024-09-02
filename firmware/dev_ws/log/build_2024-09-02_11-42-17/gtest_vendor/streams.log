@@ -1,0 +1,71 @@
+[0.435s] Invoking command in '/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/gtest_vendor': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/ament/googletest/googletest -DCMAKE_INSTALL_PREFIX=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor
+[0.436s] [proxychains] DLL init: proxychains-ng 4.17
+[0.440s] -- Configuring done (0.0s)
+[0.441s] -- Generating done (0.0s)
+[0.441s] -- Build files have been written to: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/gtest_vendor
+[0.669s] Invoked command in '/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/gtest_vendor' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/ament/googletest/googletest -DCMAKE_INSTALL_PREFIX=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor
+[0.670s] Invoking command in '/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/gtest_vendor': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/gtest_vendor -- -j16 -l16
+[0.672s] [proxychains] DLL init: proxychains-ng 4.17
+[0.673s] [proxychains] DLL init: proxychains-ng 4.17
+[0.675s] [proxychains] DLL init: proxychains-ng 4.17
+[0.677s] [proxychains] DLL init: proxychains-ng 4.17
+[0.678s] [proxychains] DLL init: proxychains-ng 4.17
+[0.680s] [proxychains] DLL init: proxychains-ng 4.17
+[0.682s] Invoked command in '/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/gtest_vendor' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/gtest_vendor -- -j16 -l16
+[0.693s] Invoking command in '/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/gtest_vendor': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/gtest_vendor --target install -- -j16 -l16
+[0.694s] [proxychains] DLL init: proxychains-ng 4.17
+[0.696s] [proxychains] DLL init: proxychains-ng 4.17
+[0.697s] [proxychains] DLL init: proxychains-ng 4.17
+[0.700s] [proxychains] DLL init: proxychains-ng 4.17
+[0.702s] [proxychains] DLL init: proxychains-ng 4.17
+[0.706s] [proxychains] DLL init: proxychains-ng 4.17
+[0.706s] [proxychains] DLL init: proxychains-ng 4.17
+[0.707s] [proxychains] DLL init: proxychains-ng 4.17
+[0.709s] [proxychains] DLL init: proxychains-ng 4.17
+[0.709s] [36mInstall the project...[0m
+[0.711s] [proxychains] DLL init: proxychains-ng 4.17
+[0.712s] -- Install configuration: ""
+[0.712s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/share/gtest_vendor/cmake/gtest_vendorConfig.cmake
+[0.712s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/share/gtest_vendor/package.xml
+[0.712s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/CMakeLists.txt
+[0.713s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/include/gtest
+[0.713s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/include/gtest/gtest_prod.h
+[0.713s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/include/gtest/gtest.h
+[0.713s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/include/gtest/gtest-message.h
+[0.713s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/include/gtest/gtest_pred_impl.h
+[0.713s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/include/gtest/gtest-typed-test.h
+[0.713s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/include/gtest/gtest-matchers.h
+[0.713s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/include/gtest/gtest-test-part.h
+[0.713s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/include/gtest/gtest-param-test.h
+[0.713s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/include/gtest/gtest-printers.h
+[0.713s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/include/gtest/gtest-spi.h
+[0.713s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/include/gtest/internal
+[0.713s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/include/gtest/internal/gtest-filepath.h
+[0.713s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/include/gtest/internal/gtest-type-util.h
+[0.714s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/include/gtest/internal/gtest-death-test-internal.h
+[0.714s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/include/gtest/internal/gtest-port-arch.h
+[0.714s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/include/gtest/internal/gtest-param-util.h
+[0.714s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/include/gtest/internal/gtest-port.h
+[0.714s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/include/gtest/internal/custom
+[0.714s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/include/gtest/internal/custom/gtest.h
+[0.714s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/include/gtest/internal/custom/gtest-port.h
+[0.714s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/include/gtest/internal/custom/gtest-printers.h
+[0.714s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/include/gtest/internal/custom/README.md
+[0.714s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/include/gtest/internal/gtest-internal.h
+[0.714s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/include/gtest/internal/gtest-string.h
+[0.714s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/include/gtest/gtest-assertion-result.h
+[0.714s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/include/gtest/gtest-death-test.h
+[0.714s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/src
+[0.715s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/src/gtest-assertion-result.cc
+[0.715s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/src/gtest-all.cc
+[0.715s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/src/gtest-internal-inl.h
+[0.715s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/src/gtest-port.cc
+[0.715s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/src/gtest-test-part.cc
+[0.715s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/src/gtest-typed-test.cc
+[0.715s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/src/gtest-death-test.cc
+[0.715s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/src/gtest_main.cc
+[0.715s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/src/gtest-printers.cc
+[0.715s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/src/gtest.cc
+[0.715s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/src/gtest-filepath.cc
+[0.715s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/src/gtest_vendor/src/gtest-matchers.cc
+[0.717s] Invoked command in '/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/gtest_vendor' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/gtest_vendor --target install -- -j16 -l16

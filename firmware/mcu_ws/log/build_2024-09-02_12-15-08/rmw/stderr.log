@@ -1,0 +1,17 @@
+[33mCMake Warning at /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  CMakeLists.txt:22 (find_package)
+
+[0m
+In file included from [01m[K/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rmw/rmw/src/validate_full_topic_name.c:17[m[K:
+[01m[K/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rmw/rmw/src/validate_full_topic_name.c:[m[K In function '[01m[Krmw_validate_full_topic_name_with_size[m[K':
+[01m[K/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rmw/rmw/src/validate_full_topic_name.c:106:29:[m[K [01;35m[Kwarning: [m[Karray subscript has type '[01m[Kchar[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wchar-subscripts-Wchar-subscripts]8;;[m[K]
+  106 |       if (isdigit([01;35m[Ktopic_name[i + 1][m[K) != 0) {
+      |                   [01;35m[K~~~~~~~~~~^~~~~~~[m[K
+In file included from [01m[K/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rmw/rmw/src/validate_node_name.c:17[m[K:
+[01m[K/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rmw/rmw/src/validate_node_name.c:[m[K In function '[01m[Krmw_validate_node_name_with_size[m[K':
+[01m[K/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rmw/rmw/src/validate_node_name.c:72:24:[m[K [01;35m[Kwarning: [m[Karray subscript has type '[01m[Kchar[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wchar-subscripts-Wchar-subscripts]8;;[m[K]
+   72 |   if (isdigit([01;35m[Knode_name[0][m[K) != 0) {
+      |               [01;35m[K~~~~~~~~~^~~[m[K

@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cmake_vendor_package/test/CMakeFiles/exlib_bad"
+		},
+		{
+			"file" : "/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cmake_vendor_package/test/CMakeFiles/exlib_bad.rule"
+		},
+		{
+			"file" : "/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cmake_vendor_package/test/CMakeFiles/exlib_bad-complete.rule"
+		},
+		{
+			"file" : "/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cmake_vendor_package/test/exlib_bad-prefix/src/exlib_bad-stamp/exlib_bad-build.rule"
+		},
+		{
+			"file" : "/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cmake_vendor_package/test/exlib_bad-prefix/src/exlib_bad-stamp/exlib_bad-configure.rule"
+		},
+		{
+			"file" : "/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cmake_vendor_package/test/exlib_bad-prefix/src/exlib_bad-stamp/exlib_bad-download.rule"
+		},
+		{
+			"file" : "/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cmake_vendor_package/test/exlib_bad-prefix/src/exlib_bad-stamp/exlib_bad-install.rule"
+		},
+		{
+			"file" : "/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cmake_vendor_package/test/exlib_bad-prefix/src/exlib_bad-stamp/exlib_bad-mkdir.rule"
+		},
+		{
+			"file" : "/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cmake_vendor_package/test/exlib_bad-prefix/src/exlib_bad-stamp/exlib_bad-patch_disconnected.rule"
+		},
+		{
+			"file" : "/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cmake_vendor_package/test/exlib_bad-prefix/src/exlib_bad-stamp/exlib_bad-update_disconnected.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"exlib_bad"
+		],
+		"name" : "exlib_bad"
+	}
+}

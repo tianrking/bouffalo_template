@@ -1,0 +1,11 @@
+[33mCMake Warning at /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  CMakeLists.txt:26 (find_package)
+
+[0m
+[01m[K/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rosidl_dynamic_typesupport/src/api/dynamic_type.c:[m[K In function '[01m[Krosidl_dynamic_typesupport_dynamic_type_builder_init_from_description[m[K':
+[01m[K/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rosidl_dynamic_typesupport/src/api/dynamic_type.c:318:28:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Kerror_string[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  318 |     rcutils_error_string_t [01;35m[Kerror_string[m[K = rcutils_get_error_string();
+      |                            [01;35m[K^~~~~~~~~~~~[m[K

@@ -1,0 +1,11 @@
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_generator_type_description/CMakeFiles/uninstall.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_generator_type_description/CMakeFiles/rosidl_generator_type_description_uninstall.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_generator_type_description/CMakeFiles/ament_cmake_python_copy_rosidl_generator_type_description.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_generator_type_description/CMakeFiles/ament_cmake_python_build_rosidl_generator_type_description_egg.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_generator_type_description/CMakeFiles/test.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_generator_type_description/CMakeFiles/edit_cache.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_generator_type_description/CMakeFiles/rebuild_cache.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_generator_type_description/CMakeFiles/list_install_components.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_generator_type_description/CMakeFiles/install.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_generator_type_description/CMakeFiles/install/local.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_generator_type_description/CMakeFiles/install/strip.dir

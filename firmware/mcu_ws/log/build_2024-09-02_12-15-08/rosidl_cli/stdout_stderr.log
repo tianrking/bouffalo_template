@@ -1,0 +1,75 @@
+running egg_info
+creating ../../../build/rosidl_cli/rosidl_cli.egg-info
+writing ../../../build/rosidl_cli/rosidl_cli.egg-info/PKG-INFO
+writing dependency_links to ../../../build/rosidl_cli/rosidl_cli.egg-info/dependency_links.txt
+writing entry points to ../../../build/rosidl_cli/rosidl_cli.egg-info/entry_points.txt
+writing requirements to ../../../build/rosidl_cli/rosidl_cli.egg-info/requires.txt
+writing top-level names to ../../../build/rosidl_cli/rosidl_cli.egg-info/top_level.txt
+writing manifest file '../../../build/rosidl_cli/rosidl_cli.egg-info/SOURCES.txt'
+reading manifest file '../../../build/rosidl_cli/rosidl_cli.egg-info/SOURCES.txt'
+writing manifest file '../../../build/rosidl_cli/rosidl_cli.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_cli/build
+creating /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_cli/build/lib
+creating /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_cli/build/lib/rosidl_cli
+copying rosidl_cli/common.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_cli/build/lib/rosidl_cli
+copying rosidl_cli/entry_points.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_cli/build/lib/rosidl_cli
+copying rosidl_cli/__init__.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_cli/build/lib/rosidl_cli
+copying rosidl_cli/cli.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_cli/build/lib/rosidl_cli
+copying rosidl_cli/extensions.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_cli/build/lib/rosidl_cli
+creating /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_cli/build/lib/rosidl_cli/command
+copying rosidl_cli/command/__init__.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_cli/build/lib/rosidl_cli/command
+copying rosidl_cli/command/helpers.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_cli/build/lib/rosidl_cli/command
+creating /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_cli/build/lib/rosidl_cli/command/translate
+copying rosidl_cli/command/translate/api.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_cli/build/lib/rosidl_cli/command/translate
+copying rosidl_cli/command/translate/__init__.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_cli/build/lib/rosidl_cli/command/translate
+copying rosidl_cli/command/translate/extensions.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_cli/build/lib/rosidl_cli/command/translate
+creating /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_cli/build/lib/rosidl_cli/command/generate
+copying rosidl_cli/command/generate/api.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_cli/build/lib/rosidl_cli/command/generate
+copying rosidl_cli/command/generate/__init__.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_cli/build/lib/rosidl_cli/command/generate
+copying rosidl_cli/command/generate/extensions.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_cli/build/lib/rosidl_cli/command/generate
+running install
+running install_lib
+creating /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/rosidl_cli
+copying /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_cli/build/lib/rosidl_cli/common.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/rosidl_cli
+copying /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_cli/build/lib/rosidl_cli/entry_points.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/rosidl_cli
+copying /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_cli/build/lib/rosidl_cli/__init__.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/rosidl_cli
+copying /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_cli/build/lib/rosidl_cli/cli.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/rosidl_cli
+copying /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_cli/build/lib/rosidl_cli/extensions.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/rosidl_cli
+creating /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/rosidl_cli/command
+creating /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/rosidl_cli/command/translate
+copying /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_cli/build/lib/rosidl_cli/command/translate/api.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/rosidl_cli/command/translate
+copying /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_cli/build/lib/rosidl_cli/command/translate/__init__.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/rosidl_cli/command/translate
+copying /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_cli/build/lib/rosidl_cli/command/translate/extensions.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/rosidl_cli/command/translate
+copying /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_cli/build/lib/rosidl_cli/command/__init__.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/rosidl_cli/command
+copying /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_cli/build/lib/rosidl_cli/command/helpers.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/rosidl_cli/command
+creating /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/rosidl_cli/command/generate
+copying /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_cli/build/lib/rosidl_cli/command/generate/api.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/rosidl_cli/command/generate
+copying /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_cli/build/lib/rosidl_cli/command/generate/__init__.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/rosidl_cli/command/generate
+copying /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_cli/build/lib/rosidl_cli/command/generate/extensions.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/rosidl_cli/command/generate
+byte-compiling /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/rosidl_cli/common.py to common.cpython-312.pyc
+byte-compiling /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/rosidl_cli/entry_points.py to entry_points.cpython-312.pyc
+byte-compiling /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/rosidl_cli/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/rosidl_cli/cli.py to cli.cpython-312.pyc
+byte-compiling /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/rosidl_cli/extensions.py to extensions.cpython-312.pyc
+byte-compiling /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/rosidl_cli/command/translate/api.py to api.cpython-312.pyc
+byte-compiling /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/rosidl_cli/command/translate/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/rosidl_cli/command/translate/extensions.py to extensions.cpython-312.pyc
+byte-compiling /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/rosidl_cli/command/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/rosidl_cli/command/helpers.py to helpers.cpython-312.pyc
+byte-compiling /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/rosidl_cli/command/generate/api.py to api.cpython-312.pyc
+byte-compiling /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/rosidl_cli/command/generate/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/rosidl_cli/command/generate/extensions.py to extensions.cpython-312.pyc
+running install_data
+copying resource/rosidl_cli -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/ament_index/resource_index/packages
+copying package.xml -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_cli
+copying resource/package.dsv -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_cli
+creating /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_cli/environment
+copying completion/rosidl-argcomplete.bash -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_cli/environment
+copying completion/rosidl-argcomplete.zsh -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_cli/environment
+running install_egg_info
+Copying ../../../build/rosidl_cli/rosidl_cli.egg-info to /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/rosidl_cli-4.6.3-py3.12.egg-info
+running install_scripts
+Installing rosidl script to /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/bin
+writing list of installed files to '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rosidl_cli/install.log'

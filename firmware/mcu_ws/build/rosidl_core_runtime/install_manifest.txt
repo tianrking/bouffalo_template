@@ -1,0 +1,16 @@
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/ament_index/resource_index/package_run_dependencies/rosidl_core_runtime
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/ament_index/resource_index/parent_prefix_path/rosidl_core_runtime
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_core_runtime/environment/ament_prefix_path.sh
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_core_runtime/environment/ament_prefix_path.dsv
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_core_runtime/environment/path.sh
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_core_runtime/environment/path.dsv
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_core_runtime/local_setup.bash
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_core_runtime/local_setup.sh
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_core_runtime/local_setup.zsh
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_core_runtime/local_setup.dsv
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_core_runtime/package.dsv
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/ament_index/resource_index/packages/rosidl_core_runtime
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_core_runtime/cmake/rosidl_core_runtime-extras.cmake
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_core_runtime/cmake/rosidl_core_runtimeConfig.cmake
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_core_runtime/cmake/rosidl_core_runtimeConfig-version.cmake
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_core_runtime/package.xml

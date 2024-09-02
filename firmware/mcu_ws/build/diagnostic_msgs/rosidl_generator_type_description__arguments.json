@@ -1,0 +1,16 @@
+{
+  "package_name": "diagnostic_msgs",
+  "output_dir": "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/diagnostic_msgs/rosidl_generator_type_description/diagnostic_msgs",
+  "idl_tuples": [
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/diagnostic_msgs/rosidl_adapter/diagnostic_msgs:msg/DiagnosticArray.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/diagnostic_msgs/rosidl_adapter/diagnostic_msgs:msg/DiagnosticStatus.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/diagnostic_msgs/rosidl_adapter/diagnostic_msgs:msg/KeyValue.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/diagnostic_msgs/rosidl_adapter/diagnostic_msgs:srv/AddDiagnostics.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/diagnostic_msgs/rosidl_adapter/diagnostic_msgs:srv/SelfTest.idl"
+  ],
+  "include_paths": [
+    "std_msgs:/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/std_msgs",
+    "builtin_interfaces:/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/builtin_interfaces",
+    "service_msgs:/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/service_msgs"
+  ]
+}

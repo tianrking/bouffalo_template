@@ -1,0 +1,2 @@
+/home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-ar qc libmicro_ros_utilities.a CMakeFiles/micro_ros_utilities.dir/src/string_utilities.c.obj CMakeFiles/micro_ros_utilities.dir/src/type_utilities.c.obj
+/home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-ranlib libmicro_ros_utilities.a

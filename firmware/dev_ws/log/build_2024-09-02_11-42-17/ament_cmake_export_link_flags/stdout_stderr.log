@@ -1,0 +1,46 @@
+[proxychains] DLL init: proxychains-ng 4.17
+-- Found ament_cmake_core: 2.5.2 (/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_core/share/ament_cmake_core/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter
+[proxychains] DLL init: proxychains-ng 4.17
+[proxychains] DLL init: proxychains-ng 4.17
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cmake_export_link_flags
+[proxychains] DLL init: proxychains-ng 4.17
+[proxychains] DLL init: proxychains-ng 4.17
+[proxychains] DLL init: proxychains-ng 4.17
+[proxychains] DLL init: proxychains-ng 4.17
+[proxychains] DLL init: proxychains-ng 4.17
+[proxychains] DLL init: proxychains-ng 4.17
+[proxychains] DLL init: proxychains-ng 4.17
+[proxychains] DLL init: proxychains-ng 4.17
+[proxychains] DLL init: proxychains-ng 4.17
+[proxychains] DLL init: proxychains-ng 4.17
+[proxychains] DLL init: proxychains-ng 4.17
+[proxychains] DLL init: proxychains-ng 4.17
+[proxychains] DLL init: proxychains-ng 4.17
+[proxychains] DLL init: proxychains-ng 4.17
+[proxychains] DLL init: proxychains-ng 4.17
+[36mInstall the project...[0m
+[proxychains] DLL init: proxychains-ng 4.17
+-- Install configuration: ""
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_export_link_flags/share/ament_index/resource_index/package_run_dependencies/ament_cmake_export_link_flags
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_export_link_flags/share/ament_index/resource_index/parent_prefix_path/ament_cmake_export_link_flags
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_export_link_flags/share/ament_cmake_export_link_flags/environment/ament_prefix_path.sh
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_export_link_flags/share/ament_cmake_export_link_flags/environment/ament_prefix_path.dsv
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_export_link_flags/share/ament_cmake_export_link_flags/environment/path.sh
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_export_link_flags/share/ament_cmake_export_link_flags/environment/path.dsv
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_export_link_flags/share/ament_cmake_export_link_flags/local_setup.bash
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_export_link_flags/share/ament_cmake_export_link_flags/local_setup.sh
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_export_link_flags/share/ament_cmake_export_link_flags/local_setup.zsh
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_export_link_flags/share/ament_cmake_export_link_flags/local_setup.dsv
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_export_link_flags/share/ament_cmake_export_link_flags/package.dsv
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_export_link_flags/share/ament_index/resource_index/packages/ament_cmake_export_link_flags
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_export_link_flags/share/ament_cmake_export_link_flags/cmake/ament_cmake_export_link_flags-extras.cmake
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_export_link_flags/share/ament_cmake_export_link_flags/cmake/ament_cmake_export_link_flagsConfig.cmake
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_export_link_flags/share/ament_cmake_export_link_flags/cmake/ament_cmake_export_link_flagsConfig-version.cmake
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_export_link_flags/share/ament_cmake_export_link_flags/package.xml
+-- Up-to-date: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_export_link_flags/share/ament_cmake_export_link_flags/cmake
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_export_link_flags/share/ament_cmake_export_link_flags/cmake/ament_cmake_export_link_flags_package_hook.cmake
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_export_link_flags/share/ament_cmake_export_link_flags/cmake/ament_cmake_export_link_flags-extras.cmake.in
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_export_link_flags/share/ament_cmake_export_link_flags/cmake/ament_export_link_flags.cmake

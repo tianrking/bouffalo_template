@@ -1,0 +1,41 @@
+[3.285s] Invoking command in '/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/ament/ament_lint/ament_cpplint': AMENT_PREFIX_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_copyright:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_pep257:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_flake8:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_lint DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_copyright/bin:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_pep257/bin:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_flake8/bin:${PATH} PYTHONPATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cpplint/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cpplint/lib/python3.12/site-packages:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_copyright/lib/python3.12/site-packages:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_pep257/lib/python3.12/site-packages:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_flake8/lib/python3.12/site-packages:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_lint/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/ament_cpplint build --build-base /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cpplint/build install --record /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cpplint/install.log --single-version-externally-managed install_data
+[3.292s] [proxychains] DLL init: proxychains-ng 4.17
+[3.802s] running egg_info
+[3.803s] creating ../../../build/ament_cpplint/ament_cpplint.egg-info
+[3.822s] writing ../../../build/ament_cpplint/ament_cpplint.egg-info/PKG-INFO
+[3.823s] writing dependency_links to ../../../build/ament_cpplint/ament_cpplint.egg-info/dependency_links.txt
+[3.823s] writing entry points to ../../../build/ament_cpplint/ament_cpplint.egg-info/entry_points.txt
+[3.823s] writing requirements to ../../../build/ament_cpplint/ament_cpplint.egg-info/requires.txt
+[3.823s] writing top-level names to ../../../build/ament_cpplint/ament_cpplint.egg-info/top_level.txt
+[3.823s] writing manifest file '../../../build/ament_cpplint/ament_cpplint.egg-info/SOURCES.txt'
+[3.871s] reading manifest file '../../../build/ament_cpplint/ament_cpplint.egg-info/SOURCES.txt'
+[3.873s] writing manifest file '../../../build/ament_cpplint/ament_cpplint.egg-info/SOURCES.txt'
+[3.873s] running build
+[3.873s] running build_py
+[3.873s] creating /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cpplint/build
+[3.873s] creating /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cpplint/build/lib
+[3.873s] creating /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cpplint/build/lib/ament_cpplint
+[3.874s] copying ament_cpplint/__init__.py -> /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cpplint/build/lib/ament_cpplint
+[3.874s] copying ament_cpplint/cpplint.py -> /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cpplint/build/lib/ament_cpplint
+[3.874s] copying ament_cpplint/main.py -> /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cpplint/build/lib/ament_cpplint
+[3.874s] running install
+[3.884s] running install_lib
+[3.907s] creating /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cpplint/lib/python3.12/site-packages/ament_cpplint
+[3.908s] copying /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cpplint/build/lib/ament_cpplint/__init__.py -> /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cpplint/lib/python3.12/site-packages/ament_cpplint
+[3.908s] copying /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cpplint/build/lib/ament_cpplint/cpplint.py -> /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cpplint/lib/python3.12/site-packages/ament_cpplint
+[3.908s] copying /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cpplint/build/lib/ament_cpplint/main.py -> /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cpplint/lib/python3.12/site-packages/ament_cpplint
+[3.908s] byte-compiling /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cpplint/lib/python3.12/site-packages/ament_cpplint/__init__.py to __init__.cpython-312.pyc
+[3.909s] byte-compiling /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cpplint/lib/python3.12/site-packages/ament_cpplint/cpplint.py to cpplint.cpython-312.pyc
+[3.954s] byte-compiling /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cpplint/lib/python3.12/site-packages/ament_cpplint/main.py to main.cpython-312.pyc
+[3.957s] running install_data
+[3.957s] copying package.xml -> /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cpplint/share/ament_cpplint
+[3.957s] creating /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cpplint/share/ament_index
+[3.957s] creating /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cpplint/share/ament_index/resource_index
+[3.958s] creating /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cpplint/share/ament_index/resource_index/packages
+[3.958s] copying resource/ament_cpplint -> /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cpplint/share/ament_index/resource_index/packages
+[3.958s] running install_egg_info
+[3.982s] Copying ../../../build/ament_cpplint/ament_cpplint.egg-info to /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cpplint/lib/python3.12/site-packages/ament_cpplint-0.17.1-py3.12.egg-info
+[3.983s] running install_scripts
+[4.177s] Installing ament_cpplint script to /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cpplint/bin
+[4.177s] writing list of installed files to '/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cpplint/install.log'
+[4.234s] Invoked command in '/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/ament/ament_lint/ament_cpplint' returned '0': AMENT_PREFIX_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_copyright:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_pep257:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_flake8:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_lint DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_copyright/bin:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_pep257/bin:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_flake8/bin:${PATH} PYTHONPATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cpplint/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cpplint/lib/python3.12/site-packages:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_copyright/lib/python3.12/site-packages:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_pep257/lib/python3.12/site-packages:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_flake8/lib/python3.12/site-packages:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_lint/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/ament_cpplint build --build-base /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cpplint/build install --record /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cpplint/install.log --single-version-externally-managed install_data

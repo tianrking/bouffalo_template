@@ -1,0 +1,23 @@
+[33mCMake Warning at /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)
+  /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_introspection_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rosidl_typesupport_introspection_c/cmake/rosidl_typesupport_introspection_cConfig.cmake:41 (include)
+  CMakeLists.txt:18 (find_package)
+
+[0m
+[01m[K/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/uros/micro_ros_utilities/src/type_utilities.c:[m[K In function '[01m[Kprint_type_info[m[K':
+[01m[K/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/uros/micro_ros_utilities/src/type_utilities.c:96:61:[m[K [01;35m[Kwarning: [m[Kformat '[01m[K%u[m[K' expects argument of type '[01m[Kunsigned int[m[K', but argument 7 has type '[01m[Kuint32_t[m[K' {aka '[01m[Kconst long unsigned int[m[K'} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   96 |       buffer, sizeof(buffer), "%sIntrospection for %s/%s - [01;35m[K%u[m[K members, %zu B\n",
+      |                                                            [01;35m[K~^[m[K
+      |                                                             [01;35m[K|[m[K
+      |                                                             [01;35m[Kunsigned int[m[K
+      |                                                            [32m[K%lu[m[K
+......
+  100 |       [32m[Kmembers->member_count_[m[K,
+      |       [32m[K~~~~~~~~~~~~~~~~~~~~~~[m[K                                 
+      |              [32m[K|[m[K
+      |              [32m[Kuint32_t {aka const long unsigned int}[m[K

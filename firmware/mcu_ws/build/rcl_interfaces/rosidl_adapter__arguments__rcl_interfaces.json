@@ -1,0 +1,26 @@
+{
+  "package_name": "rcl_interfaces",
+  "non_idl_tuples": [
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rcl_interfaces/rcl_interfaces:msg/FloatingPointRange.msg",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rcl_interfaces/rcl_interfaces:msg/IntegerRange.msg",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rcl_interfaces/rcl_interfaces:msg/ListParametersResult.msg",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rcl_interfaces/rcl_interfaces:msg/Log.msg",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rcl_interfaces/rcl_interfaces:msg/ParameterDescriptor.msg",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rcl_interfaces/rcl_interfaces:msg/ParameterEventDescriptors.msg",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rcl_interfaces/rcl_interfaces:msg/ParameterEvent.msg",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rcl_interfaces/rcl_interfaces:msg/Parameter.msg",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rcl_interfaces/rcl_interfaces:msg/ParameterType.msg",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rcl_interfaces/rcl_interfaces:msg/ParameterValue.msg",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rcl_interfaces/rcl_interfaces:msg/SetParametersResult.msg",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rcl_interfaces/rcl_interfaces:msg/LoggerLevel.msg",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rcl_interfaces/rcl_interfaces:msg/SetLoggerLevelsResult.msg",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rcl_interfaces/rcl_interfaces:srv/DescribeParameters.srv",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rcl_interfaces/rcl_interfaces:srv/GetParameters.srv",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rcl_interfaces/rcl_interfaces:srv/GetParameterTypes.srv",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rcl_interfaces/rcl_interfaces:srv/ListParameters.srv",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rcl_interfaces/rcl_interfaces:srv/SetParametersAtomically.srv",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rcl_interfaces/rcl_interfaces:srv/SetParameters.srv",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rcl_interfaces/rcl_interfaces:srv/GetLoggerLevels.srv",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rcl_interfaces/rcl_interfaces:srv/SetLoggerLevels.srv"
+  ]
+}

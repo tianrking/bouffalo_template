@@ -1,0 +1,60 @@
+[1.454s] Invoking command in '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/ros2_tracing/ros2trace': AMENT_PREFIX_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PATH=/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/bin:${PATH} PYTHONPATH=/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/ros2trace/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages:/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/ros2trace build --build-base /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/ros2trace/build install --record /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/ros2trace/install.log --single-version-externally-managed install_data
+[1.750s] running egg_info
+[1.750s] creating ../../../build/ros2trace/ros2trace.egg-info
+[1.762s] writing ../../../build/ros2trace/ros2trace.egg-info/PKG-INFO
+[1.762s] writing dependency_links to ../../../build/ros2trace/ros2trace.egg-info/dependency_links.txt
+[1.762s] writing entry points to ../../../build/ros2trace/ros2trace.egg-info/entry_points.txt
+[1.762s] writing requirements to ../../../build/ros2trace/ros2trace.egg-info/requires.txt
+[1.762s] writing top-level names to ../../../build/ros2trace/ros2trace.egg-info/top_level.txt
+[1.763s] writing manifest file '../../../build/ros2trace/ros2trace.egg-info/SOURCES.txt'
+[1.792s] reading manifest file '../../../build/ros2trace/ros2trace.egg-info/SOURCES.txt'
+[1.792s] writing manifest file '../../../build/ros2trace/ros2trace.egg-info/SOURCES.txt'
+[1.792s] running build
+[1.792s] running build_py
+[1.793s] creating /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/ros2trace/build
+[1.793s] creating /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/ros2trace/build/lib
+[1.793s] creating /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/ros2trace/build/lib/ros2trace
+[1.793s] copying ros2trace/__init__.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/ros2trace/build/lib/ros2trace
+[1.793s] creating /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/ros2trace/build/lib/ros2trace/verb
+[1.793s] copying ros2trace/verb/__init__.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/ros2trace/build/lib/ros2trace/verb
+[1.793s] copying ros2trace/verb/pause.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/ros2trace/build/lib/ros2trace/verb
+[1.793s] copying ros2trace/verb/start.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/ros2trace/build/lib/ros2trace/verb
+[1.793s] copying ros2trace/verb/resume.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/ros2trace/build/lib/ros2trace/verb
+[1.793s] copying ros2trace/verb/stop.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/ros2trace/build/lib/ros2trace/verb
+[1.793s] creating /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/ros2trace/build/lib/ros2trace/api
+[1.793s] copying ros2trace/api/__init__.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/ros2trace/build/lib/ros2trace/api
+[1.793s] creating /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/ros2trace/build/lib/ros2trace/command
+[1.793s] copying ros2trace/command/__init__.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/ros2trace/build/lib/ros2trace/command
+[1.793s] copying ros2trace/command/trace.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/ros2trace/build/lib/ros2trace/command
+[1.794s] running install
+[1.799s] running install_lib
+[1.812s] creating /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/ros2trace
+[1.812s] copying /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/ros2trace/build/lib/ros2trace/__init__.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/ros2trace
+[1.812s] creating /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/ros2trace/verb
+[1.812s] copying /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/ros2trace/build/lib/ros2trace/verb/__init__.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/ros2trace/verb
+[1.812s] copying /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/ros2trace/build/lib/ros2trace/verb/pause.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/ros2trace/verb
+[1.812s] copying /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/ros2trace/build/lib/ros2trace/verb/start.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/ros2trace/verb
+[1.812s] copying /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/ros2trace/build/lib/ros2trace/verb/resume.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/ros2trace/verb
+[1.812s] copying /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/ros2trace/build/lib/ros2trace/verb/stop.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/ros2trace/verb
+[1.812s] creating /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/ros2trace/api
+[1.813s] copying /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/ros2trace/build/lib/ros2trace/api/__init__.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/ros2trace/api
+[1.813s] creating /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/ros2trace/command
+[1.813s] copying /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/ros2trace/build/lib/ros2trace/command/__init__.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/ros2trace/command
+[1.813s] copying /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/ros2trace/build/lib/ros2trace/command/trace.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/ros2trace/command
+[1.813s] byte-compiling /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/ros2trace/__init__.py to __init__.cpython-312.pyc
+[1.813s] byte-compiling /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/ros2trace/verb/__init__.py to __init__.cpython-312.pyc
+[1.814s] byte-compiling /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/ros2trace/verb/pause.py to pause.cpython-312.pyc
+[1.814s] byte-compiling /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/ros2trace/verb/start.py to start.cpython-312.pyc
+[1.814s] byte-compiling /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/ros2trace/verb/resume.py to resume.cpython-312.pyc
+[1.814s] byte-compiling /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/ros2trace/verb/stop.py to stop.cpython-312.pyc
+[1.814s] byte-compiling /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/ros2trace/api/__init__.py to __init__.cpython-312.pyc
+[1.814s] byte-compiling /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/ros2trace/command/__init__.py to __init__.cpython-312.pyc
+[1.815s] byte-compiling /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/ros2trace/command/trace.py to trace.cpython-312.pyc
+[1.815s] running install_data
+[1.815s] copying package.xml -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/ros2trace
+[1.815s] copying resource/ros2trace -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/ament_index/resource_index/packages
+[1.815s] running install_egg_info
+[1.831s] Copying ../../../build/ros2trace/ros2trace.egg-info to /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/ros2trace-8.2.1-py3.12.egg-info
+[1.831s] running install_scripts
+[1.951s] writing list of installed files to '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/ros2trace/install.log'
+[2.019s] Invoked command in '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/ros2_tracing/ros2trace' returned '0': AMENT_PREFIX_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PATH=/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/bin:${PATH} PYTHONPATH=/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/ros2trace/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages:/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/ros2trace build --build-base /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/ros2trace/build install --record /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/ros2trace/install.log --single-version-externally-managed install_data

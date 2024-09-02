@@ -1,0 +1,111 @@
+[0.277s] Invoking command in '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/eProsima/Micro-CDR --no-warn-unused-cli -DCMAKE_POSITION_INDEPENDENT_CODE:BOOL=OFF -DTHIRDPARTY=ON -DBUILD_SHARED_LIBS=OFF -DBUILD_TESTING=OFF -DCMAKE_BUILD_TYPE=Release -DCMAKE_TOOLCHAIN_FILE=/home/w0x7ce/Desktop/microros_ws/toolchain.cmake -DCMAKE_VERBOSE_MAKEFILE=ON -DUCDR_ISOLATED_INSTALL=OFF -DUCDR_ISOLATED_BUILD=ON -DCMAKE_INSTALL_PREFIX=/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install
+[0.924s] Not searching for unused variables given on the command line.
+[0.924s] -- The C compiler identification is GNU 10.2.0
+[0.924s] -- Detecting C compiler ABI info
+[0.924s] -- Detecting C compiler ABI info - done
+[0.924s] -- Check for working C compiler: /home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-gcc - skipped
+[0.924s] -- Detecting C compile features
+[0.924s] -- Detecting C compile features - done
+[0.924s] -- The CXX compiler identification is GNU 10.2.0
+[0.925s] -- Detecting CXX compiler ABI info
+[0.925s] -- Detecting CXX compiler ABI info - done
+[0.925s] -- Check for working CXX compiler: /home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-g++ - skipped
+[0.925s] -- Detecting CXX compile features
+[0.925s] -- Detecting CXX compile features - done
+[0.925s] -- Configuring done (0.4s)
+[0.925s] -- Generating done (0.0s)
+[0.925s] -- Build files have been written to: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr
+[0.932s] Invoked command in '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/eProsima/Micro-CDR --no-warn-unused-cli -DCMAKE_POSITION_INDEPENDENT_CODE:BOOL=OFF -DTHIRDPARTY=ON -DBUILD_SHARED_LIBS=OFF -DBUILD_TESTING=OFF -DCMAKE_BUILD_TYPE=Release -DCMAKE_TOOLCHAIN_FILE=/home/w0x7ce/Desktop/microros_ws/toolchain.cmake -DCMAKE_VERBOSE_MAKEFILE=ON -DUCDR_ISOLATED_INSTALL=OFF -DUCDR_ISOLATED_BUILD=ON -DCMAKE_INSTALL_PREFIX=/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install
+[0.933s] Invoking command in '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr -- -j16 -l16
+[0.945s] Change Dir: '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr'
+[0.945s] 
+[0.945s] Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile -j16 -l16
+[0.945s] /usr/bin/cmake -S/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/eProsima/Micro-CDR -B/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr --check-build-system CMakeFiles/Makefile.cmake 0
+[0.945s] /usr/bin/cmake -E cmake_progress_start /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr/CMakeFiles /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr//CMakeFiles/progress.marks
+[0.948s] /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+[0.949s] gmake[1]: Entering directory '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr'
+[0.949s] /usr/bin/gmake  -f CMakeFiles/ucdr.dir/build.make CMakeFiles/ucdr.dir/depend
+[0.949s] gmake[2]: Entering directory '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr'
+[0.949s] cd /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/eProsima/Micro-CDR /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/eProsima/Micro-CDR /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr/CMakeFiles/ucdr.dir/DependInfo.cmake "--color="
+[0.950s] gmake[2]: Leaving directory '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr'
+[0.950s] /usr/bin/gmake  -f CMakeFiles/ucdr.dir/build.make CMakeFiles/ucdr.dir/build
+[0.951s] gmake[2]: Entering directory '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr'
+[0.951s] [ 12%] [34m[1mCreating directories for 'ucdr'[0m
+[0.952s] /usr/bin/cmake -Dcfgdir= -P /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr/ucdr-prefix/tmp/ucdr-mkdirs.cmake
+[0.953s] /usr/bin/cmake -E touch /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr/ucdr-prefix/src/ucdr-stamp/ucdr-mkdir
+[0.958s] [ 25%] [34m[1mNo download step for 'ucdr'[0m
+[0.959s] /usr/bin/cmake -E echo_append
+[0.961s] /usr/bin/cmake -E touch /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr/ucdr-prefix/src/ucdr-stamp/ucdr-download
+[0.967s] [ 37%] [34m[1mNo update step for 'ucdr'[0m
+[0.967s] /usr/bin/cmake -E echo_append
+[0.972s] /usr/bin/cmake -E touch /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr/ucdr-prefix/src/ucdr-stamp/ucdr-update
+[0.975s] [ 50%] [34m[1mNo patch step for 'ucdr'[0m
+[0.976s] /usr/bin/cmake -E echo_append
+[0.981s] /usr/bin/cmake -E touch /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr/ucdr-prefix/src/ucdr-stamp/ucdr-patch
+[0.984s] [ 62%] [34m[1mPerforming configure step for 'ucdr'[0m
+[0.984s] /usr/bin/cmake "-GUnix Makefiles" -C/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr/ucdr-prefix/tmp/ucdr-cache-Release.cmake -S /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/eProsima/Micro-CDR -B /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr
+[0.984s] loading initial cache file /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr/ucdr-prefix/tmp/ucdr-cache-Release.cmake
+[0.984s] Re-run cmake no build system arguments
+[0.988s] -- Configuring done (0.0s)
+[0.990s] -- Generating done (0.0s)
+[0.990s] -- Build files have been written to: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr
+[0.991s] /usr/bin/cmake -E touch /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr/ucdr-prefix/src/ucdr-stamp/ucdr-configure
+[0.999s] [ 75%] [34m[1mPerforming build step for 'ucdr'[0m
+[0.999s] /usr/bin/gmake
+[0.999s] gmake[3]: Entering directory '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr'
+[0.999s] /usr/bin/cmake -S/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/eProsima/Micro-CDR -B/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr --check-build-system CMakeFiles/Makefile.cmake 0
+[1.003s] /usr/bin/cmake -E cmake_progress_start /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr/CMakeFiles /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr//CMakeFiles/progress.marks
+[1.005s] /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+[1.006s] gmake[4]: Entering directory '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr'
+[1.007s] /usr/bin/gmake  -f CMakeFiles/microcdr.dir/build.make CMakeFiles/microcdr.dir/depend
+[1.007s] gmake[5]: Entering directory '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr'
+[1.007s] cd /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/eProsima/Micro-CDR /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/eProsima/Micro-CDR /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr/CMakeFiles/microcdr.dir/DependInfo.cmake "--color="
+[1.011s] gmake[5]: Leaving directory '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr'
+[1.012s] /usr/bin/gmake  -f CMakeFiles/microcdr.dir/build.make CMakeFiles/microcdr.dir/build
+[1.012s] gmake[5]: Entering directory '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr'
+[1.014s] [ 16%] [32mBuilding C object CMakeFiles/microcdr.dir/src/c/types/basic.c.obj[0m
+[1.014s] [ 33%] [32mBuilding C object CMakeFiles/microcdr.dir/src/c/common.c.obj[0m
+[1.017s] [ 50%] [32mBuilding C object CMakeFiles/microcdr.dir/src/c/types/string.c.obj[0m
+[1.018s] [ 66%] [32mBuilding C object CMakeFiles/microcdr.dir/src/c/types/array.c.obj[0m
+[1.018s] [ 83%] [32mBuilding C object CMakeFiles/microcdr.dir/src/c/types/sequence.c.obj[0m
+[1.018s] /home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-gcc -DARCH_RISCV -DBFLB_CRYPT_HARDWARE -DBFLB_PKA_HARDWARE -DCLOCK_MONOTONIC=0 -DRCUTILS_CUSTOM_TIME_IMPL -DRCUTILS_NO_64_ATOMIC -DUCLIENT_PLATFORM_RISCV -DUCLIENT_PROFILE_TCP=OFF -DUCLIENT_PROFILE_UDP=OFF -D_POSIX_TIMERS -I/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/eProsima/Micro-CDR/include -I/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr/include -std=gnu99 -march=rv32imac -mabi=ilp32 -mcmodel=medlow -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fno-zero-initialized-in-bss -Os -ggdb -Wall -mno-save-restore -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -O3 -DNDEBUG -std=gnu99 -fPIC -Wall -Wextra -Wshadow -pedantic -Wcast-align -Wunused -Wconversion -Wnull-dereference -Wduplicated-branches -Wduplicated-cond -Wrestrict -Wdouble-promotion -Wsign-conversion -fdata-sections -ffunction-sections -MD -MT CMakeFiles/microcdr.dir/src/c/common.c.obj -MF CMakeFiles/microcdr.dir/src/c/common.c.obj.d -o CMakeFiles/microcdr.dir/src/c/common.c.obj -c /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/eProsima/Micro-CDR/src/c/common.c
+[1.018s] /home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-gcc -DARCH_RISCV -DBFLB_CRYPT_HARDWARE -DBFLB_PKA_HARDWARE -DCLOCK_MONOTONIC=0 -DRCUTILS_CUSTOM_TIME_IMPL -DRCUTILS_NO_64_ATOMIC -DUCLIENT_PLATFORM_RISCV -DUCLIENT_PROFILE_TCP=OFF -DUCLIENT_PROFILE_UDP=OFF -D_POSIX_TIMERS -I/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/eProsima/Micro-CDR/include -I/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr/include -std=gnu99 -march=rv32imac -mabi=ilp32 -mcmodel=medlow -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fno-zero-initialized-in-bss -Os -ggdb -Wall -mno-save-restore -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -O3 -DNDEBUG -std=gnu99 -fPIC -Wall -Wextra -Wshadow -pedantic -Wcast-align -Wunused -Wconversion -Wnull-dereference -Wduplicated-branches -Wduplicated-cond -Wrestrict -Wdouble-promotion -Wsign-conversion -fdata-sections -ffunction-sections -MD -MT CMakeFiles/microcdr.dir/src/c/types/basic.c.obj -MF CMakeFiles/microcdr.dir/src/c/types/basic.c.obj.d -o CMakeFiles/microcdr.dir/src/c/types/basic.c.obj -c /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/eProsima/Micro-CDR/src/c/types/basic.c
+[1.018s] /home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-gcc -DARCH_RISCV -DBFLB_CRYPT_HARDWARE -DBFLB_PKA_HARDWARE -DCLOCK_MONOTONIC=0 -DRCUTILS_CUSTOM_TIME_IMPL -DRCUTILS_NO_64_ATOMIC -DUCLIENT_PLATFORM_RISCV -DUCLIENT_PROFILE_TCP=OFF -DUCLIENT_PROFILE_UDP=OFF -D_POSIX_TIMERS -I/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/eProsima/Micro-CDR/include -I/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr/include -std=gnu99 -march=rv32imac -mabi=ilp32 -mcmodel=medlow -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fno-zero-initialized-in-bss -Os -ggdb -Wall -mno-save-restore -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -O3 -DNDEBUG -std=gnu99 -fPIC -Wall -Wextra -Wshadow -pedantic -Wcast-align -Wunused -Wconversion -Wnull-dereference -Wduplicated-branches -Wduplicated-cond -Wrestrict -Wdouble-promotion -Wsign-conversion -fdata-sections -ffunction-sections -MD -MT CMakeFiles/microcdr.dir/src/c/types/string.c.obj -MF CMakeFiles/microcdr.dir/src/c/types/string.c.obj.d -o CMakeFiles/microcdr.dir/src/c/types/string.c.obj -c /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/eProsima/Micro-CDR/src/c/types/string.c
+[1.019s] /home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-gcc -DARCH_RISCV -DBFLB_CRYPT_HARDWARE -DBFLB_PKA_HARDWARE -DCLOCK_MONOTONIC=0 -DRCUTILS_CUSTOM_TIME_IMPL -DRCUTILS_NO_64_ATOMIC -DUCLIENT_PLATFORM_RISCV -DUCLIENT_PROFILE_TCP=OFF -DUCLIENT_PROFILE_UDP=OFF -D_POSIX_TIMERS -I/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/eProsima/Micro-CDR/include -I/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr/include -std=gnu99 -march=rv32imac -mabi=ilp32 -mcmodel=medlow -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fno-zero-initialized-in-bss -Os -ggdb -Wall -mno-save-restore -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -O3 -DNDEBUG -std=gnu99 -fPIC -Wall -Wextra -Wshadow -pedantic -Wcast-align -Wunused -Wconversion -Wnull-dereference -Wduplicated-branches -Wduplicated-cond -Wrestrict -Wdouble-promotion -Wsign-conversion -fdata-sections -ffunction-sections -MD -MT CMakeFiles/microcdr.dir/src/c/types/array.c.obj -MF CMakeFiles/microcdr.dir/src/c/types/array.c.obj.d -o CMakeFiles/microcdr.dir/src/c/types/array.c.obj -c /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/eProsima/Micro-CDR/src/c/types/array.c
+[1.019s] /home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-gcc -DARCH_RISCV -DBFLB_CRYPT_HARDWARE -DBFLB_PKA_HARDWARE -DCLOCK_MONOTONIC=0 -DRCUTILS_CUSTOM_TIME_IMPL -DRCUTILS_NO_64_ATOMIC -DUCLIENT_PLATFORM_RISCV -DUCLIENT_PROFILE_TCP=OFF -DUCLIENT_PROFILE_UDP=OFF -D_POSIX_TIMERS -I/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/eProsima/Micro-CDR/include -I/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr/include -std=gnu99 -march=rv32imac -mabi=ilp32 -mcmodel=medlow -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fno-zero-initialized-in-bss -Os -ggdb -Wall -mno-save-restore -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -O3 -DNDEBUG -std=gnu99 -fPIC -Wall -Wextra -Wshadow -pedantic -Wcast-align -Wunused -Wconversion -Wnull-dereference -Wduplicated-branches -Wduplicated-cond -Wrestrict -Wdouble-promotion -Wsign-conversion -fdata-sections -ffunction-sections -MD -MT CMakeFiles/microcdr.dir/src/c/types/sequence.c.obj -MF CMakeFiles/microcdr.dir/src/c/types/sequence.c.obj.d -o CMakeFiles/microcdr.dir/src/c/types/sequence.c.obj -c /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/eProsima/Micro-CDR/src/c/types/sequence.c
+[1.831s] [100%] [32m[1mLinking C static library libmicrocdr.a[0m
+[1.832s] /usr/bin/cmake -P CMakeFiles/microcdr.dir/cmake_clean_target.cmake
+[1.834s] /usr/bin/cmake -E cmake_link_script CMakeFiles/microcdr.dir/link.txt --verbose=1
+[1.836s] /home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-ar qc libmicrocdr.a CMakeFiles/microcdr.dir/src/c/common.c.obj CMakeFiles/microcdr.dir/src/c/types/basic.c.obj CMakeFiles/microcdr.dir/src/c/types/string.c.obj CMakeFiles/microcdr.dir/src/c/types/array.c.obj CMakeFiles/microcdr.dir/src/c/types/sequence.c.obj
+[1.838s] /home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-ranlib libmicrocdr.a
+[1.841s] gmake[5]: Leaving directory '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr'
+[1.844s] [100%] Built target microcdr
+[1.844s] gmake[4]: Leaving directory '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr'
+[1.844s] /usr/bin/cmake -E cmake_progress_start /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr/CMakeFiles 0
+[1.846s] gmake[3]: Leaving directory '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr'
+[1.846s] /usr/bin/cmake -E touch /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr/ucdr-prefix/src/ucdr-stamp/ucdr-build
+[1.850s] [34m[1mNo install step for 'ucdr'[0m
+[1.851s] /usr/bin/cmake -E echo_append
+[1.852s] /usr/bin/cmake -E touch /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr/ucdr-prefix/src/ucdr-stamp/ucdr-install
+[1.856s] [34m[1mCompleted 'ucdr'[0m
+[1.857s] /usr/bin/cmake -E make_directory /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr/CMakeFiles
+[1.858s] /usr/bin/cmake -E touch /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr/CMakeFiles/ucdr-complete
+[1.860s] /usr/bin/cmake -E touch /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr/ucdr-prefix/src/ucdr-stamp/ucdr-done
+[1.862s] gmake[2]: Leaving directory '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr'
+[1.864s] Built target ucdr
+[1.864s] gmake[1]: Leaving directory '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr'
+[1.864s] /usr/bin/cmake -E cmake_progress_start /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr/CMakeFiles 0
+[1.867s] 
+[1.868s] Invoked command in '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr -- -j16 -l16
+[1.884s] Invoking command in '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr
+[1.886s] -- Install configuration: "Release"
+[1.886s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/libmicrocdr.a
+[1.887s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/include/ucdr
+[1.887s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/include/ucdr/microcdr.h
+[1.887s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/include/ucdr/visibility.h
+[1.887s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/include/ucdr/config.h
+[1.887s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/microcdr/cmake/microcdrTargets.cmake
+[1.887s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/microcdr/cmake/microcdrTargets-release.cmake
+[1.887s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/microcdr/cmake/microcdrConfig.cmake
+[1.887s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/microcdr/cmake/microcdrConfigVersion.cmake
+[1.888s] Invoked command in '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/microcdr

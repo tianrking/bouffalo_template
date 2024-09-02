@@ -1,0 +1,38 @@
+[1.348s] Invoking command in '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/ros2_tracing/tracetools_test': AMENT_PREFIX_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PATH=/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/bin:${PATH} PYTHONPATH=/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/tracetools_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages:/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/tracetools_test build --build-base /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/tracetools_test/build install --record /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/tracetools_test/install.log --single-version-externally-managed install_data
+[1.708s] running egg_info
+[1.708s] creating ../../../build/tracetools_test/tracetools_test.egg-info
+[1.720s] writing ../../../build/tracetools_test/tracetools_test.egg-info/PKG-INFO
+[1.720s] writing dependency_links to ../../../build/tracetools_test/tracetools_test.egg-info/dependency_links.txt
+[1.720s] writing requirements to ../../../build/tracetools_test/tracetools_test.egg-info/requires.txt
+[1.720s] writing top-level names to ../../../build/tracetools_test/tracetools_test.egg-info/top_level.txt
+[1.720s] writing manifest file '../../../build/tracetools_test/tracetools_test.egg-info/SOURCES.txt'
+[1.751s] reading manifest file '../../../build/tracetools_test/tracetools_test.egg-info/SOURCES.txt'
+[1.751s] writing manifest file '../../../build/tracetools_test/tracetools_test.egg-info/SOURCES.txt'
+[1.751s] running build
+[1.752s] running build_py
+[1.752s] creating /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/tracetools_test/build
+[1.752s] creating /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/tracetools_test/build/lib
+[1.752s] creating /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/tracetools_test/build/lib/tracetools_test
+[1.752s] copying tracetools_test/__init__.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/tracetools_test/build/lib/tracetools_test
+[1.752s] copying tracetools_test/utils.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/tracetools_test/build/lib/tracetools_test
+[1.752s] copying tracetools_test/mark_process.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/tracetools_test/build/lib/tracetools_test
+[1.752s] copying tracetools_test/case.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/tracetools_test/build/lib/tracetools_test
+[1.752s] running install
+[1.758s] running install_lib
+[1.771s] creating /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/tracetools_test
+[1.771s] copying /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/tracetools_test/build/lib/tracetools_test/__init__.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/tracetools_test
+[1.771s] copying /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/tracetools_test/build/lib/tracetools_test/utils.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/tracetools_test
+[1.771s] copying /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/tracetools_test/build/lib/tracetools_test/mark_process.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/tracetools_test
+[1.772s] copying /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/tracetools_test/build/lib/tracetools_test/case.py -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/tracetools_test
+[1.772s] byte-compiling /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/tracetools_test/__init__.py to __init__.cpython-312.pyc
+[1.772s] byte-compiling /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/tracetools_test/utils.py to utils.cpython-312.pyc
+[1.773s] byte-compiling /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/tracetools_test/mark_process.py to mark_process.cpython-312.pyc
+[1.773s] byte-compiling /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/tracetools_test/case.py to case.cpython-312.pyc
+[1.775s] running install_data
+[1.775s] copying package.xml -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/tracetools_test
+[1.775s] copying resource/tracetools_test -> /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/ament_index/resource_index/packages
+[1.775s] running install_egg_info
+[1.791s] Copying ../../../build/tracetools_test/tracetools_test.egg-info to /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages/tracetools_test-8.2.1-py3.12.egg-info
+[1.792s] running install_scripts
+[1.903s] writing list of installed files to '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/tracetools_test/install.log'
+[1.937s] Invoked command in '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/ros2_tracing/tracetools_test' returned '0': AMENT_PREFIX_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PATH=/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/bin:${PATH} PYTHONPATH=/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/tracetools_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages:/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/tracetools_test build --build-base /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/tracetools_test/build install --record /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/tracetools_test/install.log --single-version-externally-managed install_data

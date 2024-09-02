@@ -1,0 +1,13 @@
+# generated from colcon_core/shell/template/command_prefix.sh.em
+. "/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_lint/share/ament_lint/package.sh"
+. "/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_package/share/ament_package/package.sh"
+. "/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_core/share/ament_cmake_core/package.sh"
+. "/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_flake8/share/ament_flake8/package.sh"
+. "/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_python/share/ament_cmake_python/package.sh"
+. "/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_pep257/share/ament_pep257/package.sh"
+. "/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_test/share/ament_cmake_test/package.sh"
+. "/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_copyright/share/ament_copyright/package.sh"
+. "/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cpplint/share/ament_cpplint/package.sh"
+. "/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_lint_cmake/share/ament_lint_cmake/package.sh"
+. "/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_lint_cmake/share/ament_cmake_lint_cmake/package.sh"
+. "/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_copyright/share/ament_cmake_copyright/package.sh"

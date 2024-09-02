@@ -1,0 +1,33 @@
+Not searching for unused variables given on the command line.
+-- Found ament_cmake: 2.5.2 (/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/common_interfaces
+Change Dir: '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/common_interfaces'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile -j16 -l16
+/usr/bin/cmake -S/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/common_interfaces/common_interfaces -B/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/common_interfaces --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/common_interfaces/CMakeFiles /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/common_interfaces//CMakeFiles/progress.marks
+/usr/bin/gmake  -f CMakeFiles/Makefile2 all
+gmake[1]: Entering directory '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/common_interfaces'
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Leaving directory '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/common_interfaces'
+/usr/bin/cmake -E cmake_progress_start /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/common_interfaces/CMakeFiles 0
+
+-- Install configuration: "Release"
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/ament_index/resource_index/package_run_dependencies/common_interfaces
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/ament_index/resource_index/parent_prefix_path/common_interfaces
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/common_interfaces/environment/ament_prefix_path.sh
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/common_interfaces/environment/ament_prefix_path.dsv
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/common_interfaces/environment/path.sh
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/common_interfaces/environment/path.dsv
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/common_interfaces/local_setup.bash
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/common_interfaces/local_setup.sh
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/common_interfaces/local_setup.zsh
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/common_interfaces/local_setup.dsv
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/common_interfaces/package.dsv
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/ament_index/resource_index/packages/common_interfaces
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/common_interfaces/cmake/common_interfacesConfig.cmake
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/common_interfaces/cmake/common_interfacesConfig-version.cmake
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/common_interfaces/package.xml

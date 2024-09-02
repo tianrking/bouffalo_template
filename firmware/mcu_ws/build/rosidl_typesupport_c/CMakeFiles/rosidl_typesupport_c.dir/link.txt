@@ -1,0 +1,2 @@
+/home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-ar qc librosidl_typesupport_c.a CMakeFiles/rosidl_typesupport_c.dir/src/identifier.c.obj CMakeFiles/rosidl_typesupport_c.dir/src/message_type_support_dispatch.cpp.obj CMakeFiles/rosidl_typesupport_c.dir/src/service_type_support_dispatch.cpp.obj
+/home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-ranlib librosidl_typesupport_c.a

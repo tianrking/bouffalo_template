@@ -1,0 +1,15 @@
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/visualization_msgs/CMakeFiles/uninstall.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/visualization_msgs/CMakeFiles/visualization_msgs_uninstall.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/visualization_msgs/CMakeFiles/visualization_msgs.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/visualization_msgs/CMakeFiles/visualization_msgs__rosidl_generator_type_description.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/visualization_msgs/CMakeFiles/visualization_msgs__rosidl_generator_c.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/visualization_msgs/CMakeFiles/visualization_msgs__rosidl_typesupport_introspection_c.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/visualization_msgs/CMakeFiles/visualization_msgs__rosidl_typesupport_microxrcedds_c.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/visualization_msgs/CMakeFiles/visualization_msgs__rosidl_typesupport_c.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/visualization_msgs/CMakeFiles/test.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/visualization_msgs/CMakeFiles/edit_cache.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/visualization_msgs/CMakeFiles/rebuild_cache.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/visualization_msgs/CMakeFiles/list_install_components.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/visualization_msgs/CMakeFiles/install.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/visualization_msgs/CMakeFiles/install/local.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/visualization_msgs/CMakeFiles/install/strip.dir

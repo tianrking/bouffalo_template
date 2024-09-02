@@ -1,0 +1,8 @@
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/lib/libmicrocdr.a
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/include/ucdr/microcdr.h
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/include/ucdr/visibility.h
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/include/ucdr/config.h
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/microcdr/cmake/microcdrTargets.cmake
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/microcdr/cmake/microcdrTargets-release.cmake
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/microcdr/cmake/microcdrConfig.cmake
+/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/microcdr/cmake/microcdrConfigVersion.cmake

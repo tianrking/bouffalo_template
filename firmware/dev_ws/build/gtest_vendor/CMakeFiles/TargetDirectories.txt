@@ -1,0 +1,5 @@
+/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/gtest_vendor/CMakeFiles/edit_cache.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/gtest_vendor/CMakeFiles/rebuild_cache.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/gtest_vendor/CMakeFiles/list_install_components.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/gtest_vendor/CMakeFiles/install.dir
+/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/gtest_vendor/CMakeFiles/install/local.dir

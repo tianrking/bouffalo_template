@@ -1,0 +1,45 @@
+[1.237s] Invoking command in '/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/ament/ament_lint/ament_mypy': AMENT_PREFIX_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_flake8:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_lint DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_flake8/bin:${PATH} PYTHONPATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_mypy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_mypy/lib/python3.12/site-packages:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_flake8/lib/python3.12/site-packages:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_lint/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/ament_mypy build --build-base /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_mypy/build install --record /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_mypy/install.log --single-version-externally-managed install_data
+[1.238s] [proxychains] DLL init: proxychains-ng 4.17
+[1.532s] running egg_info
+[1.533s] creating ../../../build/ament_mypy/ament_mypy.egg-info
+[1.543s] writing ../../../build/ament_mypy/ament_mypy.egg-info/PKG-INFO
+[1.544s] writing dependency_links to ../../../build/ament_mypy/ament_mypy.egg-info/dependency_links.txt
+[1.544s] writing entry points to ../../../build/ament_mypy/ament_mypy.egg-info/entry_points.txt
+[1.544s] writing requirements to ../../../build/ament_mypy/ament_mypy.egg-info/requires.txt
+[1.544s] writing top-level names to ../../../build/ament_mypy/ament_mypy.egg-info/top_level.txt
+[1.544s] writing manifest file '../../../build/ament_mypy/ament_mypy.egg-info/SOURCES.txt'
+[1.572s] reading manifest file '../../../build/ament_mypy/ament_mypy.egg-info/SOURCES.txt'
+[1.573s] writing manifest file '../../../build/ament_mypy/ament_mypy.egg-info/SOURCES.txt'
+[1.573s] running build
+[1.574s] running build_py
+[1.574s] creating /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_mypy/build
+[1.574s] creating /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_mypy/build/lib
+[1.574s] creating /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_mypy/build/lib/ament_mypy
+[1.574s] copying ament_mypy/__init__.py -> /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_mypy/build/lib/ament_mypy
+[1.574s] copying ament_mypy/main.py -> /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_mypy/build/lib/ament_mypy
+[1.575s] copying ament_mypy/pytest_marker.py -> /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_mypy/build/lib/ament_mypy
+[1.575s] creating /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_mypy/build/lib/ament_mypy/configuration
+[1.575s] copying ament_mypy/configuration/ament_mypy.ini -> /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_mypy/build/lib/ament_mypy/configuration
+[1.575s] running install
+[1.581s] running install_lib
+[1.600s] creating /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_mypy/lib/python3.12/site-packages/ament_mypy
+[1.600s] copying /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_mypy/build/lib/ament_mypy/__init__.py -> /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_mypy/lib/python3.12/site-packages/ament_mypy
+[1.600s] copying /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_mypy/build/lib/ament_mypy/main.py -> /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_mypy/lib/python3.12/site-packages/ament_mypy
+[1.600s] copying /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_mypy/build/lib/ament_mypy/pytest_marker.py -> /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_mypy/lib/python3.12/site-packages/ament_mypy
+[1.600s] creating /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_mypy/lib/python3.12/site-packages/ament_mypy/configuration
+[1.600s] copying /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_mypy/build/lib/ament_mypy/configuration/ament_mypy.ini -> /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_mypy/lib/python3.12/site-packages/ament_mypy/configuration
+[1.601s] byte-compiling /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_mypy/lib/python3.12/site-packages/ament_mypy/__init__.py to __init__.cpython-312.pyc
+[1.601s] byte-compiling /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_mypy/lib/python3.12/site-packages/ament_mypy/main.py to main.cpython-312.pyc
+[1.602s] byte-compiling /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_mypy/lib/python3.12/site-packages/ament_mypy/pytest_marker.py to pytest_marker.cpython-312.pyc
+[1.603s] running install_data
+[1.603s] copying package.xml -> /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_mypy/share/ament_mypy
+[1.603s] creating /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_mypy/share/ament_index
+[1.603s] creating /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_mypy/share/ament_index/resource_index
+[1.603s] creating /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_mypy/share/ament_index/resource_index/packages
+[1.603s] copying resource/ament_mypy -> /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_mypy/share/ament_index/resource_index/packages
+[1.603s] running install_egg_info
+[1.616s] Copying ../../../build/ament_mypy/ament_mypy.egg-info to /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_mypy/lib/python3.12/site-packages/ament_mypy-0.17.1-py3.12.egg-info
+[1.617s] running install_scripts
+[1.739s] Installing ament_mypy script to /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_mypy/bin
+[1.740s] writing list of installed files to '/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_mypy/install.log'
+[1.792s] Invoked command in '/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/ament/ament_lint/ament_mypy' returned '0': AMENT_PREFIX_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_flake8:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_lint DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_flake8/bin:${PATH} PYTHONPATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_mypy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_mypy/lib/python3.12/site-packages:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_flake8/lib/python3.12/site-packages:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_lint/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/ament_mypy build --build-base /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_mypy/build install --record /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_mypy/install.log --single-version-externally-managed install_data

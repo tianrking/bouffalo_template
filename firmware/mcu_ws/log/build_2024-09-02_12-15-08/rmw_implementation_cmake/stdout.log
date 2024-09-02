@@ -1,0 +1,39 @@
+Not searching for unused variables given on the command line.
+-- Found ament_cmake: 2.5.2 (/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter
+-- Configuring done (0.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rmw_implementation_cmake
+Change Dir: '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rmw_implementation_cmake'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile -j16 -l16
+/usr/bin/cmake -S/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/rmw/rmw_implementation_cmake -B/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rmw_implementation_cmake --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rmw_implementation_cmake/CMakeFiles /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rmw_implementation_cmake//CMakeFiles/progress.marks
+/usr/bin/gmake  -f CMakeFiles/Makefile2 all
+gmake[1]: Entering directory '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rmw_implementation_cmake'
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Leaving directory '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rmw_implementation_cmake'
+/usr/bin/cmake -E cmake_progress_start /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rmw_implementation_cmake/CMakeFiles 0
+
+-- Install configuration: "Release"
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/ament_index/resource_index/package_run_dependencies/rmw_implementation_cmake
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/ament_index/resource_index/parent_prefix_path/rmw_implementation_cmake
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rmw_implementation_cmake/environment/ament_prefix_path.sh
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rmw_implementation_cmake/environment/ament_prefix_path.dsv
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rmw_implementation_cmake/environment/path.sh
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rmw_implementation_cmake/environment/path.dsv
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rmw_implementation_cmake/local_setup.bash
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rmw_implementation_cmake/local_setup.sh
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rmw_implementation_cmake/local_setup.zsh
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rmw_implementation_cmake/local_setup.dsv
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rmw_implementation_cmake/package.dsv
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/ament_index/resource_index/packages/rmw_implementation_cmake
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rmw_implementation_cmake/cmake/rmw_implementation_cmake-extras.cmake
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rmw_implementation_cmake/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rmw_implementation_cmake/cmake/rmw_implementation_cmakeConfig.cmake
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rmw_implementation_cmake/cmake/rmw_implementation_cmakeConfig-version.cmake
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rmw_implementation_cmake/package.xml
+-- Up-to-date: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rmw_implementation_cmake/cmake
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rmw_implementation_cmake/cmake/call_for_each_rmw_implementation.cmake
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rmw_implementation_cmake/cmake/get_default_rmw_implementation.cmake
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/rmw_implementation_cmake/cmake/get_available_rmw_implementations.cmake

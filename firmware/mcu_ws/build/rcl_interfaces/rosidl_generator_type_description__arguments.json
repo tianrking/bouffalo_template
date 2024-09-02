@@ -1,0 +1,31 @@
+{
+  "package_name": "rcl_interfaces",
+  "output_dir": "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rcl_interfaces/rosidl_generator_type_description/rcl_interfaces",
+  "idl_tuples": [
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rcl_interfaces/rosidl_adapter/rcl_interfaces:msg/FloatingPointRange.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rcl_interfaces/rosidl_adapter/rcl_interfaces:msg/IntegerRange.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rcl_interfaces/rosidl_adapter/rcl_interfaces:msg/ListParametersResult.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rcl_interfaces/rosidl_adapter/rcl_interfaces:msg/Log.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rcl_interfaces/rosidl_adapter/rcl_interfaces:msg/ParameterDescriptor.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rcl_interfaces/rosidl_adapter/rcl_interfaces:msg/ParameterEventDescriptors.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rcl_interfaces/rosidl_adapter/rcl_interfaces:msg/ParameterEvent.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rcl_interfaces/rosidl_adapter/rcl_interfaces:msg/Parameter.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rcl_interfaces/rosidl_adapter/rcl_interfaces:msg/ParameterType.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rcl_interfaces/rosidl_adapter/rcl_interfaces:msg/ParameterValue.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rcl_interfaces/rosidl_adapter/rcl_interfaces:msg/SetParametersResult.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rcl_interfaces/rosidl_adapter/rcl_interfaces:msg/LoggerLevel.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rcl_interfaces/rosidl_adapter/rcl_interfaces:msg/SetLoggerLevelsResult.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rcl_interfaces/rosidl_adapter/rcl_interfaces:srv/DescribeParameters.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rcl_interfaces/rosidl_adapter/rcl_interfaces:srv/GetParameters.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rcl_interfaces/rosidl_adapter/rcl_interfaces:srv/GetParameterTypes.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rcl_interfaces/rosidl_adapter/rcl_interfaces:srv/ListParameters.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rcl_interfaces/rosidl_adapter/rcl_interfaces:srv/SetParametersAtomically.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rcl_interfaces/rosidl_adapter/rcl_interfaces:srv/SetParameters.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rcl_interfaces/rosidl_adapter/rcl_interfaces:srv/GetLoggerLevels.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/rcl_interfaces/rosidl_adapter/rcl_interfaces:srv/SetLoggerLevels.idl"
+  ],
+  "include_paths": [
+    "builtin_interfaces:/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/builtin_interfaces",
+    "service_msgs:/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/service_msgs"
+  ]
+}

@@ -1,0 +1,58 @@
+[0.004s] Invoking command in '/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/gmock_vendor': CMAKE_PREFIX_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PKG_CONFIG_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/lib/x86_64-linux-gnu/pkgconfig:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/lib/pkgconfig /usr/bin/cmake /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/ament/googletest/googlemock -DCMAKE_INSTALL_PREFIX=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gmock_vendor
+[0.006s] [proxychains] DLL init: proxychains-ng 4.17
+[0.015s] -- Configuring done (0.0s)
+[0.016s] -- Generating done (0.0s)
+[0.016s] -- Build files have been written to: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/gmock_vendor
+[0.018s] Invoked command in '/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/gmock_vendor' returned '0': CMAKE_PREFIX_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PKG_CONFIG_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/lib/x86_64-linux-gnu/pkgconfig:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/lib/pkgconfig /usr/bin/cmake /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/ament/googletest/googlemock -DCMAKE_INSTALL_PREFIX=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gmock_vendor
+[0.019s] Invoking command in '/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/gmock_vendor': CMAKE_PREFIX_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PKG_CONFIG_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/lib/x86_64-linux-gnu/pkgconfig:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/lib/pkgconfig /usr/bin/cmake --build /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/gmock_vendor -- -j16 -l16
+[0.021s] [proxychains] DLL init: proxychains-ng 4.17
+[0.022s] [proxychains] DLL init: proxychains-ng 4.17
+[0.024s] [proxychains] DLL init: proxychains-ng 4.17
+[0.027s] [proxychains] DLL init: proxychains-ng 4.17
+[0.028s] [proxychains] DLL init: proxychains-ng 4.17
+[0.030s] [proxychains] DLL init: proxychains-ng 4.17
+[0.032s] Invoked command in '/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/gmock_vendor' returned '0': CMAKE_PREFIX_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PKG_CONFIG_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/lib/x86_64-linux-gnu/pkgconfig:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/lib/pkgconfig /usr/bin/cmake --build /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/gmock_vendor -- -j16 -l16
+[0.042s] Invoking command in '/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/gmock_vendor': CMAKE_PREFIX_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PKG_CONFIG_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/lib/x86_64-linux-gnu/pkgconfig:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/lib/pkgconfig /usr/bin/cmake --build /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/gmock_vendor --target install -- -j16 -l16
+[0.043s] [proxychains] DLL init: proxychains-ng 4.17
+[0.044s] [proxychains] DLL init: proxychains-ng 4.17
+[0.046s] [proxychains] DLL init: proxychains-ng 4.17
+[0.049s] [proxychains] DLL init: proxychains-ng 4.17
+[0.050s] [proxychains] DLL init: proxychains-ng 4.17
+[0.052s] [proxychains] DLL init: proxychains-ng 4.17
+[0.054s] [proxychains] DLL init: proxychains-ng 4.17
+[0.055s] [proxychains] DLL init: proxychains-ng 4.17
+[0.057s] [proxychains] DLL init: proxychains-ng 4.17
+[0.057s] [36mInstall the project...[0m
+[0.059s] [proxychains] DLL init: proxychains-ng 4.17
+[0.060s] -- Install configuration: ""
+[0.060s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gmock_vendor/share/gmock_vendor/cmake/gmock_vendorConfig.cmake
+[0.060s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gmock_vendor/share/gmock_vendor/package.xml
+[0.060s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gmock_vendor/src/gmock_vendor/CMakeLists.txt
+[0.060s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gmock_vendor/src/gmock_vendor/include/gmock
+[0.060s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gmock_vendor/src/gmock_vendor/include/gmock/gmock-cardinalities.h
+[0.060s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gmock_vendor/src/gmock_vendor/include/gmock/gmock-spec-builders.h
+[0.060s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gmock_vendor/src/gmock_vendor/include/gmock/gmock.h
+[0.060s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gmock_vendor/src/gmock_vendor/include/gmock/gmock-more-actions.h
+[0.060s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gmock_vendor/src/gmock_vendor/include/gmock/gmock-matchers.h
+[0.061s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gmock_vendor/src/gmock_vendor/include/gmock/gmock-nice-strict.h
+[0.061s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gmock_vendor/src/gmock_vendor/include/gmock/gmock-actions.h
+[0.062s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gmock_vendor/src/gmock_vendor/include/gmock/gmock-more-matchers.h
+[0.062s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gmock_vendor/src/gmock_vendor/include/gmock/gmock-function-mocker.h
+[0.062s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gmock_vendor/src/gmock_vendor/include/gmock/internal
+[0.062s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gmock_vendor/src/gmock_vendor/include/gmock/internal/gmock-internal-utils.h
+[0.062s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gmock_vendor/src/gmock_vendor/include/gmock/internal/custom
+[0.062s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gmock_vendor/src/gmock_vendor/include/gmock/internal/custom/gmock-matchers.h
+[0.062s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gmock_vendor/src/gmock_vendor/include/gmock/internal/custom/gmock-generated-actions.h
+[0.062s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gmock_vendor/src/gmock_vendor/include/gmock/internal/custom/gmock-port.h
+[0.062s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gmock_vendor/src/gmock_vendor/include/gmock/internal/custom/README.md
+[0.062s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gmock_vendor/src/gmock_vendor/include/gmock/internal/gmock-port.h
+[0.062s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gmock_vendor/src/gmock_vendor/include/gmock/internal/gmock-pp.h
+[0.062s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gmock_vendor/src/gmock_vendor/src
+[0.062s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gmock_vendor/src/gmock_vendor/src/gmock-all.cc
+[0.062s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gmock_vendor/src/gmock_vendor/src/gmock-matchers.cc
+[0.062s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gmock_vendor/src/gmock_vendor/src/gmock-internal-utils.cc
+[0.062s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gmock_vendor/src/gmock_vendor/src/gmock.cc
+[0.062s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gmock_vendor/src/gmock_vendor/src/gmock-spec-builders.cc
+[0.062s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gmock_vendor/src/gmock_vendor/src/gmock-cardinalities.cc
+[0.062s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gmock_vendor/src/gmock_vendor/src/gmock_main.cc
+[0.064s] Invoked command in '/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/gmock_vendor' returned '0': CMAKE_PREFIX_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PKG_CONFIG_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/lib/x86_64-linux-gnu/pkgconfig:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/gtest_vendor/lib/pkgconfig /usr/bin/cmake --build /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/gmock_vendor --target install -- -j16 -l16

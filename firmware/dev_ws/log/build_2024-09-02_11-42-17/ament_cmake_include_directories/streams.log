@@ -1,0 +1,50 @@
+[0.015s] Invoking command in '/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cmake_include_directories': AMENT_PREFIX_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_core:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_package CMAKE_PREFIX_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_core DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_package/lib/python3.12/site-packages /usr/bin/cmake /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/ament/ament_cmake/ament_cmake_include_directories -DCMAKE_INSTALL_PREFIX=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_include_directories
+[0.027s] [proxychains] DLL init: proxychains-ng 4.17
+[0.027s] -- Found ament_cmake_core: 2.5.2 (/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_core/share/ament_cmake_core/cmake)
+[0.161s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter
+[0.164s] [proxychains] DLL init: proxychains-ng 4.17
+[0.232s] [proxychains] DLL init: proxychains-ng 4.17
+[0.330s] -- Configuring done (0.3s)
+[0.332s] -- Generating done (0.0s)
+[0.332s] -- Build files have been written to: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cmake_include_directories
+[0.335s] Invoked command in '/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cmake_include_directories' returned '0': AMENT_PREFIX_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_core:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_package CMAKE_PREFIX_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_core DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_package/lib/python3.12/site-packages /usr/bin/cmake /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/ament/ament_cmake/ament_cmake_include_directories -DCMAKE_INSTALL_PREFIX=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_include_directories
+[0.336s] Invoking command in '/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cmake_include_directories': AMENT_PREFIX_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_core:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_package CMAKE_PREFIX_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_core DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_package/lib/python3.12/site-packages /usr/bin/cmake --build /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cmake_include_directories -- -j16 -l16
+[0.339s] [proxychains] DLL init: proxychains-ng 4.17
+[0.342s] [proxychains] DLL init: proxychains-ng 4.17
+[0.345s] [proxychains] DLL init: proxychains-ng 4.17
+[0.351s] [proxychains] DLL init: proxychains-ng 4.17
+[0.353s] [proxychains] DLL init: proxychains-ng 4.17
+[0.356s] [proxychains] DLL init: proxychains-ng 4.17
+[0.359s] Invoked command in '/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cmake_include_directories' returned '0': AMENT_PREFIX_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_core:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_package CMAKE_PREFIX_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_core DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_package/lib/python3.12/site-packages /usr/bin/cmake --build /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cmake_include_directories -- -j16 -l16
+[0.373s] Invoking command in '/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cmake_include_directories': AMENT_PREFIX_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_core:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_package CMAKE_PREFIX_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_core DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_package/lib/python3.12/site-packages /usr/bin/cmake --build /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cmake_include_directories --target install -- -j16 -l16
+[0.375s] [proxychains] DLL init: proxychains-ng 4.17
+[0.377s] [proxychains] DLL init: proxychains-ng 4.17
+[0.379s] [proxychains] DLL init: proxychains-ng 4.17
+[0.381s] [proxychains] DLL init: proxychains-ng 4.17
+[0.383s] [proxychains] DLL init: proxychains-ng 4.17
+[0.386s] [proxychains] DLL init: proxychains-ng 4.17
+[0.392s] [proxychains] DLL init: proxychains-ng 4.17
+[0.393s] [proxychains] DLL init: proxychains-ng 4.17
+[0.396s] [proxychains] DLL init: proxychains-ng 4.17
+[0.396s] [36mInstall the project...[0m
+[0.397s] [proxychains] DLL init: proxychains-ng 4.17
+[0.397s] -- Install configuration: ""
+[0.398s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_include_directories/share/ament_index/resource_index/package_run_dependencies/ament_cmake_include_directories
+[0.399s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_include_directories/share/ament_index/resource_index/parent_prefix_path/ament_cmake_include_directories
+[0.400s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_include_directories/share/ament_cmake_include_directories/environment/ament_prefix_path.sh
+[0.400s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_include_directories/share/ament_cmake_include_directories/environment/ament_prefix_path.dsv
+[0.400s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_include_directories/share/ament_cmake_include_directories/environment/path.sh
+[0.400s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_include_directories/share/ament_cmake_include_directories/environment/path.dsv
+[0.400s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_include_directories/share/ament_cmake_include_directories/local_setup.bash
+[0.400s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_include_directories/share/ament_cmake_include_directories/local_setup.sh
+[0.400s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_include_directories/share/ament_cmake_include_directories/local_setup.zsh
+[0.400s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_include_directories/share/ament_cmake_include_directories/local_setup.dsv
+[0.400s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_include_directories/share/ament_cmake_include_directories/package.dsv
+[0.400s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_include_directories/share/ament_index/resource_index/packages/ament_cmake_include_directories
+[0.401s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_include_directories/share/ament_cmake_include_directories/cmake/ament_cmake_include_directories-extras.cmake
+[0.401s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_include_directories/share/ament_cmake_include_directories/cmake/ament_cmake_include_directoriesConfig.cmake
+[0.401s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_include_directories/share/ament_cmake_include_directories/cmake/ament_cmake_include_directoriesConfig-version.cmake
+[0.401s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_include_directories/share/ament_cmake_include_directories/package.xml
+[0.401s] -- Up-to-date: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_include_directories/share/ament_cmake_include_directories/cmake
+[0.401s] -- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_include_directories/share/ament_cmake_include_directories/cmake/ament_include_directories_order.cmake
+[0.403s] Invoked command in '/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cmake_include_directories' returned '0': AMENT_PREFIX_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_core:/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_package CMAKE_PREFIX_PATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_core DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_package/lib/python3.12/site-packages /usr/bin/cmake --build /home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/build/ament_cmake_include_directories --target install -- -j16 -l16

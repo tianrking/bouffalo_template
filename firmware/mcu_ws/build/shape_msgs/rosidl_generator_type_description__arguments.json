@@ -1,0 +1,14 @@
+{
+  "package_name": "shape_msgs",
+  "output_dir": "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/shape_msgs/rosidl_generator_type_description/shape_msgs",
+  "idl_tuples": [
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/shape_msgs/rosidl_adapter/shape_msgs:msg/Mesh.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/shape_msgs/rosidl_adapter/shape_msgs:msg/MeshTriangle.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/shape_msgs/rosidl_adapter/shape_msgs:msg/Plane.idl",
+    "/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/shape_msgs/rosidl_adapter/shape_msgs:msg/SolidPrimitive.idl"
+  ],
+  "include_paths": [
+    "geometry_msgs:/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/geometry_msgs",
+    "std_msgs:/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/std_msgs"
+  ]
+}

@@ -1,0 +1,54 @@
+Not searching for unused variables given on the command line.
+-- The C compiler identification is GNU 10.2.0
+-- The CXX compiler identification is GNU 10.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/w0x7ce/toolchain_gcc_t-head_linux/bin/riscv64-unknown-elf-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.2 (/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter
+-- Found ament_cmake_vendor_package: 2.5.2 (/home/w0x7ce/Desktop/microros_ws/firmware/dev_ws/install/ament_cmake_vendor_package/share/ament_cmake_vendor_package/cmake)
+-- Checking for module 'yaml-0.1'
+--   Found yaml-0.1, version 0.2.5
+-- Skipping vendor package build for 'libyaml_vendor', which is already satisfied
+-- Configuring done (0.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/libyaml_vendor
+Change Dir: '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/libyaml_vendor'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile -j16 -l16
+/usr/bin/cmake -S/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/ros2/libyaml_vendor -B/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/libyaml_vendor --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/libyaml_vendor/CMakeFiles /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/libyaml_vendor//CMakeFiles/progress.marks
+/usr/bin/gmake  -f CMakeFiles/Makefile2 all
+gmake[1]: Entering directory '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/libyaml_vendor'
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Leaving directory '/home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/libyaml_vendor'
+/usr/bin/cmake -E cmake_progress_start /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/build/libyaml_vendor/CMakeFiles 0
+
+-- Install configuration: "Release"
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/libyaml_vendor/cmake
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/libyaml_vendor/cmake/Modules
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/libyaml_vendor/cmake/Modules/Findyaml.cmake
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/ament_index/resource_index/package_run_dependencies/libyaml_vendor
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/ament_index/resource_index/parent_prefix_path/libyaml_vendor
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/libyaml_vendor/environment/ament_prefix_path.sh
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/libyaml_vendor/environment/ament_prefix_path.dsv
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/libyaml_vendor/environment/path.sh
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/libyaml_vendor/environment/path.dsv
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/libyaml_vendor/local_setup.bash
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/libyaml_vendor/local_setup.sh
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/libyaml_vendor/local_setup.zsh
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/libyaml_vendor/local_setup.dsv
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/libyaml_vendor/package.dsv
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/ament_index/resource_index/packages/libyaml_vendor
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/libyaml_vendor/cmake/libyaml_vendor-extras.cmake
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/libyaml_vendor/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/libyaml_vendor/cmake/libyaml_vendorConfig.cmake
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/libyaml_vendor/cmake/libyaml_vendorConfig-version.cmake
+-- Installing: /home/w0x7ce/Desktop/microros_ws/firmware/mcu_ws/install/share/libyaml_vendor/package.xml
